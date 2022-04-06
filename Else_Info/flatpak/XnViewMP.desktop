@@ -1,0 +1,20 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Terminal=false
+Type=Application
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=xnview --file-forwarding com.xnview.XnViewMP @@ %F @@
+Icon=/var/lib/flatpak/app/com.xnview.XnViewMP/current/active/export/share/icons/hicolor/48x48/apps/com.xnview.XnViewMP.png
+StartupNotify=true
+StartupWMClass=XnView
+Name=XnViewMP
+GenericName=XnViewMP
+Categories=Graphics;Viewer;RasterGraphics;2DGraphics;Photography;Qt;
+MimeType=image/bmp;image/gif;image/x-portable-bitmap;image/x-portable-pixmap;image/x-psd;image/x-tga;image/x-xbitmap;image/tiff;image/jpeg;image/x-psd;image/png;image/x-icon;image/x-xpixmap;image/svg+xml;
+X-Flatpak-Tags=proprietary;
+X-Flatpak=com.xnview.XnViewMP
+Comment=View and organize your images
+Comment[ru]=Просмотр изображений и ведение альбомов
+Keywords=XnView;Image;Viewer;
+Keywords[ru]=XnView;Изображение; Обозреватель;

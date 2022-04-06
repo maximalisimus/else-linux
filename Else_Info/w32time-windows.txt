@@ -1,0 +1,52 @@
+
+
+w32tm /config /syncfromflags:manual
+ 
+/manualpeerlist:time.windows.com
+ 
+time.windows.com
+time.nist.gov
+time-nw.nist.gov
+time-a.nist.gov
+time-b.nist.gov
+ 
+net start w32time
+ 
+w32tm /register
+ 
+w32tm /resync
+ 
+Power-Shell:
+Get-Service W32Time | Select-Object
+ 
+w32tm /config /reliable:yes
+Start-Service W32Time
+ 
+ 
+Win+R:
+ 
+services.msc
+ 
+Служба времени Windows
+ 
+Тип запуска -> Вручную
+ 
+Если в разделе «Состояние» написано: «Остановлена», 
+то нужно нажать кнопки «Запустить» и «Ок».
+ 
+В том случае, когда служба и так включена в ручном режиме, 
+нужно сначала ее остановить, а потом запустить заново (перезапустить).
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

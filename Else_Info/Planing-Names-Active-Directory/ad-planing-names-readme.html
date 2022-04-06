@@ -1,0 +1,493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.2.2.2 (Linux)"/>
+	<meta name="created" content="2020-04-09T22:39:19"/>
+	<meta name="changed" content="2022-02-12T11:52:17.590248185"/>
+	<meta name="AppVersion" content="15.0000"/>
+	<style type="text/css">
+		@page { size: 21.59cm 27.94cm; margin: 2cm }
+		p { color: #000000; line-height: 115%; text-align: left; orphans: 2; widows: 2; margin-bottom: 0.25cm; direction: ltr; background: transparent }
+		p.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: ru-RU }
+		p.cjk { font-family: "AR PL New Sung"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "DejaVu Sans"; font-size: 12pt; so-language: hi-IN }
+		h3 { color: #000000; text-align: left; orphans: 2; widows: 2; margin-top: 0.25cm; margin-bottom: 0.21cm; direction: ltr; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", sans-serif; font-size: 14pt; so-language: ru-RU; font-weight: bold }
+		h3.cjk { font-family: "AR PL New Sung"; font-size: 14pt; so-language: zh-CN; font-weight: bold }
+		h3.ctl { font-family: "DejaVu Sans"; font-size: 14pt; so-language: hi-IN; font-weight: bold }
+		h4 { color: #000000; text-align: left; orphans: 2; widows: 2; margin-top: 0.21cm; margin-bottom: 0.21cm; direction: ltr; background: transparent; page-break-after: avoid }
+		h4.western { font-family: "Liberation Serif", sans-serif; font-size: 12pt; so-language: ru-RU; font-weight: bold }
+		h4.cjk { font-family: "AR PL New Sung"; font-size: 12pt; so-language: zh-CN; font-weight: bold }
+		h4.ctl { font-family: "DejaVu Sans"; font-size: 12pt; so-language: hi-IN; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="ru-RU" text="#000000" link="#000080" vlink="#800000" dir="ltr"><h4 class="western" align="left">
+<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Именование
+объектов</span></span></span></font></font></font></span></h4>
+<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="id_67"></a>
+<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+службе каталогов должен быть механизм
+именования объектов, позволяющий
+однозначно идентифицировать любой
+объект каталога. В каталогах на базе
+протокола LDAP </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">для
+идентификации объекта в масштабе всего
+леса</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+используется механизм </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">отличительных
+имен</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+( </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Distinguished
+Name, DN</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+). В Active Directory учетная запись пользователя
+с именем </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">User</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+домена </span></span></span></font></font></font></span><a href="http://company.ru/" target="_blank"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">company.ru</span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+размещенная в стандартном контейнере
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Users</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+будет иметь следующее отличительное
+имя: &quot;DC=ru, DC=company, OU=Users, CN=User&quot;.</span></span></span></font></font></font></span></p>
+<div id="TextSection" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел1" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Обозначения:</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел2" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел3" dir="ltr">
+	<ul><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>DC</b></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+		(Domain Component) — указатель на составную
+		часть доменного имени;</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>OU</b></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+		(Organizational Unit) — указатель на организационное
+		подразделение (ОП);</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>CN</b></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+		(Common Name) — указатель на общее имя.</span></span></span></font></font></font></span></p>
+	</ul>
+</div>
+<div id="Раздел4" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел5" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Если
+	отличительное имя однозначно определяет
+	объект в масштабе всего леса, то для
+	идентификации объекта относительно
+	контейнера, в котором данный объект
+	хранится, существует относительное
+	отличительное имя ( </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Relative
+	Distinguished Name, RDN</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	). Для пользователя </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">User</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	из предыдущего примера RDN-имя будет
+	иметь вид &quot; </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">CN=User</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	&quot;.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел6" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел7" dir="ltr"><p class="western" align="left" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Кроме
+	имен DN и RDN, используется </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">основное
+	имя</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	объекта ( </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">User
+	Principal Name, UPN</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	). Оно имеет формат </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#8b0000"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&lt;имя
+	субъекта&gt;@&lt;суффикс домена&gt;</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	Для того же пользователя из примера
+	основное имя будет выглядеть как
+	</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#8b0000"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">User@company.ru</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел8" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел9" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Имена
+	DN, RDN могут меняться, если объект
+	перемещается из одного контейнера AD в
+	другой. Для того чтобы не терять ссылки
+	на объекты при их перемещении в лесу,
+	всем объектам назначается </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">глобально
+	уникальный идентификатор</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	( </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Globally
+	Unique Identifier, GUID</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	), представляющий собой 128-битное число.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел10" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел11" dir="ltr"><h3 class="western" style="orphans: 2; widows: 2; margin-top: 0.13cm; margin-bottom: 0.13cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Планирование
+	пространства имен AD</span></span></span></font></font></font></span></h3>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="id_78"></a><a name="keyword77"></a><a name="keyword78"></a><a name="keyword79"></a><a name="keyword80"></a><a name="keyword81"></a>
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Планирование
+	пространства имен и структуры </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">AD</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	— очень ответственный момент, от
+	которого зависит эффективность
+	функционирования будущей корпоративной
+	системы безопасности. При этом надо
+	иметь в виду, что созданную вначале
+	структуру в процессе эксплуатации
+	будет очень трудно изменить (например,
+	в </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Windows
+	2000</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	изменить имя домена верхнего уровня
+	вообще невозможно, а в </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Windows</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	2003 решение этой задачи требует выполнения
+	жестких условий и тщательной подготовки
+	данной </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">операции</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).
+	При планировании </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">AD</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	необходимо учитывать следующие моменты:</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел12" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел13" dir="ltr">
+	<ul><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">тщательный
+		выбор имен доменов верхнего уровня;</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">качество
+		коммуникаций в компании (связь между
+		отдельными подразделениями и филиалами);</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">организационная
+		структура компании;</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">количество
+		пользователей и компьютеров в момент
+		планирования;</span></span></span></font></font></font></span></p>
+		<li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">прогноз
+		темпов роста количества пользователей
+		и компьютеров.</span></span></span></font></font></font></span></p>
+	</ul>
+</div>
+<div id="Раздел14" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел15" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="keyword82"></a>
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Рассмотрим
+	вопрос пространства имен </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">AD</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел16" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел17" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="keyword83"></a><a name="keyword84"></a><a name="keyword85"></a><a name="keyword86"></a><a name="keyword87"></a>
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">При
+	планировании имен доменов верхнего
+	уровня можно использовать различные
+	стратегии и правила. В первую </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">очередь</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	необходимо учитывать вопросы интеграции
+	внутреннего пространства имен и
+	пространства имен сети </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">Интернет</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	— т.к. </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">пространство
+	имен</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">AD</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	базируется на пространстве имен </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">DNS</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	при неправильном планировании могут
+	возникнуть проблемы с безопасностью,
+	а также конфликты с внешними именами.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел18" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел19" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Рассмотрим
+	основные варианты.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел20" dir="ltr"><p class="western"><br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел21" dir="ltr">
+	<ol><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Один
+		домен, одна зона DNS (</span></span></span></font></font></font></span><a href="https://intuit.ru/studies/courses/991/216/lecture/5567?page=2#image.6.4"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">рис.
+		6.4</span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).</span></span></span></font></font></font></span></p>
+	</ol>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="id_90"></a>
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">На
+	рисунке в левой части — внутренняя
+	сеть компании, справа — сеть Интернет,
+	две сети разделены маршрутизатором &quot;
+	</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">R</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+	&quot; (кроме маршрутизатора, на границе
+	могут быть также прокси-сервер или
+	межсетевой экран).</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел22" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел23" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<img src="ad-planing-names-readme_html_8a9486e6ab2942c2.gif" name="Изображение1" align="bottom" width="550" height="295" border="0"/>
+</p>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Рис.
+	6.4.</b></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел24" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел25" dir="ltr"><p class="western" align="left" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+	данном п</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">римере
+	используется одна и та же зона DNS
+	(</span></font></span><a href="http://company.ru/" target="_blank"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><span style="letter-spacing: normal">company.ru</span></span></font></span></a><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">)
+	как для поддержки внутреннего домена
+	AD с тем же именем (записи DC, SRV-1, SRV-2,
+	WS-1), так и хранения ссылок на внешние
+	ресурсы компании — веб-сайт, почтовый
+	сервер (записи </span></font></span><span style="font-variant: normal"><font color="#8b0000"><font face="monospace"><span style="letter-spacing: normal">www</span></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">,
+	</span></font></span><span style="font-variant: normal"><font color="#8b0000"><font face="monospace"><span style="letter-spacing: normal">mail</span></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">
+	).</span></font></span></p>
+</div>
+<div id="Раздел26" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел27" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Такой
+	способ максимально упрощает работу
+	системного администратора, но при этом
+	DNS-сервер, доступный для всей сети
+	Интернет, хранит зону company.ru и предоставляет
+	доступ к записям этой зоны всем
+	пользователям Интернета. Таким образом,
+	внешние злоумышленники могут получить
+	полный список внутренних узлов
+	корпоративной сети. Даже если сеть
+	надежно защищена межсетевым экраном
+	и другими средствами защиты, предоставление
+	потенциальным взломщикам информации
+	о структуре внутренней сети — вещь
+	очень рискованная, поэтому данный
+	способ организации пространства имен
+	AD не рекомендуется (хотя на практике
+	встречается довольно часто).</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел28" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел29" dir="ltr">
+	<ol start="2"><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&quot;Расщепление&quot;
+		пространства имен DNS - одно имя домена,
+		две различные зоны DNS(</span></span></span></font></font></font></span><a href="https://intuit.ru/studies/courses/991/216/lecture/5567?page=2#image.6.5"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">рис.
+		6.5</span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).</span></span></span></font></font></font></span></p>
+	</ol>
+</div>
+<div id="Раздел30" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<img src="ad-planing-names-readme_html_8db4e48530b49205.gif" name="Изображение2" align="bottom" width="550" height="279" border="0"/>
+</p>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Рис.
+	6.5.</b></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел31" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел32" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+	данном с</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">лучае
+	на различных серверах DNS создаются
+	различные зоны с одним и тем же именем
+	company.ru. На внутреннем DNS-сервере
+	функционирует зона company.ru.для Active
+	Directory, на внешнем DNS-сервере — зона с
+	таким же именем, но для ссылок на внешние
+	ресурсы. Важный момент — данные зоны
+	никак между собой не связаны — ни
+	механизмами репликации, ни ручной
+	синхронизацией.</span></font></span></p>
+</div>
+<div id="Раздел33" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел34" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Здесь
+	во внешней зоне хранятся ссылки на
+	внешние ресурсы, а во внутренней на
+	внутренние ресурсы, используемые для
+	работы Active Directory. Данный вариант несложно
+	реализовать, но для сетевого администратора
+	возникает нагрузка управления двумя
+	разными доменами с одним именем.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел35" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел36" dir="ltr">
+	<ol start="3"><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Поддомен
+		в пространстве имен DNS для поддержки
+		Active Directory (</span></span></span></font></font></font></span><a href="https://intuit.ru/studies/courses/991/216/lecture/5567?page=2#image.6.6"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">рис.
+		6.6</span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).</span></span></span></font></font></font></span></p>
+	</ol>
+</div>
+<div id="Раздел37" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<img src="ad-planing-names-readme_html_15af6c85e696f980.gif" name="Изображение3" align="bottom" width="550" height="270" border="0"/>
+</p>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Рис.
+	6.6.</b></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел38" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел39" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+	данном п</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">римере
+	корневой домен компании company.ru служит
+	для хранения ссылок на внешние ресурсы.
+	В домене company.ru настраивается делегирование
+	управление поддоменом corp.company.ru на
+	внутренний DNS-сервер, и именно на базе
+	домена corp.company.ru создается домен Active
+	Directory. В этом случае во внешней зоне
+	хранятся ссылки на внешние ресурсы, а
+	также ссылка на делегирование управления
+	поддоменом на внутренний DNS-сервер.
+	Таким образом, пользователям Интернета
+	доступен минимум информации о внутренней
+	сети. Такой вариант организации
+	пространства имен довольно часто
+	используется компаниями.</span></font></span></p>
+</div>
+<div id="Раздел40" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел41" dir="ltr">
+	<ol start="4"><li><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Два
+		различных домена DNS для внешних ресурсов
+		и для Active Directory (</span></span></span></font></font></font></span><a href="https://intuit.ru/studies/courses/991/216/lecture/5567?page=2#image.6.7"><span style="font-variant: normal"><font color="#0071a6"><span style="text-decoration: none"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">рис.
+		6.7</span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.).</span></span></span></font></font></font></span></p>
+	</ol>
+</div>
+<div id="Раздел42" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<img src="ad-planing-names-readme_html_d89b7974d7149a4e.gif" name="Изображение4" align="bottom" width="550" height="273" border="0"/>
+</p>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-bottom: 0cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Рис.
+	6.7.</b></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел43" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел44" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+	этом сце</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">нарии
+	компания регистрирует в Интернет-органах
+	два доменных имени: одно для публикации
+	внешних ресурсов, другое — для
+	развертывания Active Directory.</span></font></span></p>
+</div>
+<div id="Раздел45" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел46" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Данный
+	сценарий планирования пространства
+	имен самый оптимальный. Во-первых, имя
+	внешнего домена никак не связано с
+	именем внутреннего домена, и не возникает
+	никаких проблем с возможностью показа
+	в Интернет внутренней структуры.
+	Во-вторых, регистрация (покупка)
+	внутреннего имени гарантирует отсутствие
+	потенциальных конфликтов, вызванных
+	тем, что какая-то другая компания может
+	зарегистрировать в Интернете имя,
+	совпадающее с внутренним именем вашей
+	компании.</span></span></span></font></font></font></span></p>
+</div>
+<div id="Раздел47" dir="ltr"><p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+	<br/>
+<br/>
+
+	</p>
+</div>
+<div id="Раздел48" dir="ltr">
+	<ol start="5"><li><p class="western" align="left" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm">
+		<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Домен
+		с именем типа </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#8b0000"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">company.local</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span></span></font></font></font></span></p>
+	</ol>
+	<p class="western" style="line-height: 0.42cm; orphans: 2; widows: 2; margin-top: 0.19cm; margin-bottom: 0.19cm"><a name="id_109"></a>
+	<span style="font-variant: normal"><font color="#000000"><font face="lucida grande, tahoma, verdana, arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Во
+	многих учебных пособиях и статьях
+	используются примеры с доменными
+	именами вида company.local. Такая схема вполне
+	работоспособна и также часто применяется
+	на практике. Однако в материалах
+	разработчика системы Windows, корпорации
+	Microsoft, нет прямых рекомендаций об
+	использовании данного варианта.</span></span></span></font></font></font></span></p>
+	<p class="western" align="left" style="line-height: 100%; margin-bottom: 0cm">
+	<br/>
+
+	</p>
+</div>
+</body>
+</html>

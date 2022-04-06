@@ -1,0 +1,19 @@
+
+
+sudo systemd-resolve —flush-caches
+sudo systemctl enable systemd-resolved.service
+sudo systemd-resolve —statistics
+
+systemctl restart nscd
+nscd -K; nscd
+sudo apt install nscd
+sudo service nscd restart
+sudo ncsd -g
+sudo strings /var/cache/nscd/hosts
+
+sudo service networking restart
+
+sudo systemctl restart NetworkManager
+
+/etc/nsswitch.conf
+

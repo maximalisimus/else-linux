@@ -1,0 +1,5 @@
+
+https://github.com/AppImage/AppImageKit.git
+
+https://github.com/AppImage/AppImageKit/releases/
+

@@ -1,0 +1,87 @@
+------------server-----------
+ssh root@ip вашего сервера
+
+----------ubuntu 14.04-------
+
+apt-get update
+apt-get upgrade -y
+
+apt-get install shadowsocks python3-nacl -y
+
+nano /etc/shadowsocks/config.json
+
+Конфиг должен иметь примерно такой видэ
+
+{
+    "server":"ip вашего сервера",
+    "server_port":8388,
+    "local_port":1080,
+    "password":"UOjwAPGapd",
+    "timeout":300,
+    "method":"chacha20-ietf"
+}
+
+
+server - ip адрес сервера. в данном случае ip vps который смотрит в интернет
+server_port - порт на котором поднимается shadowsocks
+local_address - ip локальной машины. не обязательно. 
+local_port - локальный порт
+password - пароль для подключения
+timeaut - максимальное время соединения с сайтом.
+method - метод шифрования
+fast_open - включает TFO
+worker - максимальное количество клиентов
+prefer_ipv6 - предпочитать ipv6
+
+------client linux-------
+sudo add-apt-repository ppa:hzwhuang/ss-qt5
+sudo apt-get update
+sudo apt-get install shadowsocks-qt5
+
+запускаем shadowsocks-qt5
+вводим данные для подключения
+жмём connect
+
+в настройках firefox на socks5 127.0.0.1 1080
+
+или как вариант через iptables
+
+sudo apt-get install iptables git-core libevent-dev
+git clone http://github.com/darkk/redsocks.git
+cd redsocks/
+make
+
+base{
+	log_debug = on; 
+	log_info = on; 
+	log = "file:/tmp/reddi.log";	
+	daemon = on; 
+	redirector = iptables;
+}
+redsocks { 
+	local_ip = 127.0.0.1; 
+	local_port = 31338; 
+	ip = 127.0.0.1;
+	port = 1080; 
+	type = socks5; 
+}
+./redsocks -c redsocks.conf
+
+iptables -t nat -N SHADOWSOCKS
+
+iptables -t nat -A SHADOWSOCKS -d ip вашего сервера/32 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
+
+iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 31338
+iptables -t nat -A OUTPUT -p tcp -j SHADOWSOCKS
+
+------windows--------
+SSCAP
+proxyfire или просто заворот на socks5

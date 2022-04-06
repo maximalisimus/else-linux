@@ -1,0 +1,284 @@
+export VERSION=1.27
+
+PKG_CONFIG ?= pkg-config
+
+SHELL=/bin/bash
+
+sd_var = $(shell $(PKG_CONFIG) --variable=systemd$(1) systemd)
+systemdsystemconfdir = $(call sd_var,systemconfdir)
+systemdsystemunitdir = $(call sd_var,systemunitdir)
+
+DESTDIR=./pkg
+INPTDIR=./netctl-git
+MANDIR=$(DESTDIR)/usr/share/man
+DESTSERVICE=$(DESTDIR)/
+
+MODULES=contrib/* docs/* services/* src/*
+SOURCES=$(addprefix $(INPTDIR)/, $(MODULES))
+
+MANPAGES = $(INPTDIR)/docs/netctl.1 $(INPTDIR)/docs/netctl-auto.1 $(INPTDIR)/docs/netctl.profile.5 $(INPTDIR)/docs/netctl.special.7 $(INPTDIR)/docs/wifi-menu.1
+manpages_source := $(patsubst %, %.txt, $(MANPAGES))
+manpages_gzip = $(patsubst %.txt, %.gz, $(manpages_source))
+
+manpages_files := $(notdir $(MANPAGES))
+manpages_out := $(foreach mp,$(manpages_files),$(MANDIR)/man$(subst .,,$(suffix $(mp)))/$(mp).gz)
+#manpages_dir := $(sort $(shell dirname $(manpages_out)))
+manpages_dir := $(sort $(foreach mp,$(manpages_files),$(MANDIR)/man$(subst .,,$(suffix $(mp)))/))
+
+services_in := $(INPTDIR)/services/*.service
+services_file := $(notdir $(services_in))
+services_out := $(addprefix $(DESTSERVICE)$(systemdsystemunitdir)/, $(services_file))
+
+PROFILE_DIR=/etc/netctl
+SUBR_DIR=/usr/lib/netctl
+
+ETCDIR=$(DESTDIR)/etc/netctl
+LIBDIR=$(DESTDIR)/usr/lib/netctl
+GLOBALSFILE=$(LIBDIR)/globals
+NETWORKFILE=$(LIBDIR)/network
+
+BINDIR=$(DESTDIR)/usr/bin
+
+IFPLUGDDIR=$(DESTDIR)/etc/ifplugd
+
+ETCDIR_BUILD=/etc/netctl
+LIBDIR_BUILD=/usr/lib/netctl
+GLOBALSFILE_BUILD=$(LIBDIR_BUILD)/globals
+NETWORKFILE_BUILD=$(LIBDIR_BUILD)/network
+BINDIR_BUILD=/usr/bin
+IFPLUGDDIR_BUILD=/etc/ifplugd
+
+.PHONY: gitclone build install all uninstall clean cleanbuild cleangit
+
+gitclone: cleangit
+	#
+	# Repositories
+	#
+	mkdir -p $(INPTDIR)
+	git clone https://gitlab.archlinux.org/archlinux/netctl.git $(INPTDIR)
+	mkdir -p $(DESTDIR)
+
+build: $(SOURCES)
+	#
+	# Documentation
+	#
+	for i in $(manpages_source) ; do \
+		a2x -d manpage -f manpage -a manversion=$(VERSION) $$i ; \
+	done
+	for j in $(MANPAGES) ; do \
+		gzip -c $$j > $$j.gz ; \
+	done
+	rm -rf $(MANPAGES)
+	mkdir -p $(manpages_dir)
+	install -m644 $(INPTDIR)/docs/netctl.1.gz $(MANDIR)/man1/netctl.1.gz
+	install -m644 $(INPTDIR)/docs/netctl-auto.1.gz $(MANDIR)/man1/netctl-auto.1.gz
+	install -m644 $(INPTDIR)/docs/netctl.profile.5.gz $(MANDIR)/man5/netctl.profile.5.gz
+	install -m644 $(INPTDIR)/docs/netctl.special.7.gz $(MANDIR)/man7/netctl.special.7.gz
+	install -m644 $(INPTDIR)/docs/wifi-menu.1.gz $(MANDIR)/man1/wifi-menu.1.gz
+	rm -rf $(manpages_gzip)
+	#
+	# Configuration files
+	#
+	install -d $(ETCDIR)/{examples,hooks,interfaces}
+	install -m644 $(INPTDIR)/docs/examples/* $(ETCDIR)/examples/
+	#
+	# Libs
+	#
+	install -Dt $(LIBDIR) -m644 $(INPTDIR)/src/lib/{globals,interface,ip,rfkill,wpa}
+	install -Dt $(LIBDIR)/connections -m644 $(INPTDIR)/src/lib/connections/*
+	install -Dt $(LIBDIR)/dhcp -m644 $(INPTDIR)/src/lib/dhcp/*
+	install -m755 $(INPTDIR)/src/lib/{auto.action,network} $(LIBDIR)/
+	#
+	# Libs path edit
+	#
+	sed -e "/^PROFILE_DIR=/c PROFILE_DIR=\"$(ETCDIR_BUILD)\"" \
+		-e "/^SUBR_DIR=/c SUBR_DIR=\"$(LIBDIR_BUILD)\"" \
+		$(INPTDIR)/src/lib/globals > $(GLOBALSFILE)
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+		$(INPTDIR)/src/lib/network > $(NETWORKFILE)
+	#
+	# Scripts
+	#
+	install -d $(BINDIR)
+	sed -e "s|@systemdsystemconfdir@|$(systemdsystemconfdir)|g" \
+	    -e "s|@systemdsystemunitdir@|$(systemdsystemunitdir)|g" \
+	    -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+	    $(INPTDIR)/src/netctl.in > $(BINDIR)/netctl
+	chmod 755 $(BINDIR)/netctl
+	install -m755 \
+	    $(INPTDIR)/src/netctl-auto \
+	    $(INPTDIR)/src/wifi-menu \
+	    $(BINDIR)/
+	install -Dm755 $(INPTDIR)/src/ifplugd.action $(IFPLUGDDIR)/netctl.action
+	#
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+		$(INPTDIR)/src/ifplugd.action > $(IFPLUGDDIR)/netctl.action
+	chmod 755 $(IFPLUGDDIR)/netctl.action
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+		$(INPTDIR)/src/netctl-auto > $(BINDIR)/netctl-auto
+	chmod 755 $(BINDIR)/netctl-auto
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+		$(INPTDIR)/src/wifi-menu > $(BINDIR)/wifi-menu
+	chmod 755 $(BINDIR)/wifi-menu
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE_BUILD)" \
+		$(INPTDIR)/src/lib/auto.action > $(LIBDIR)/auto.action
+	chmod 755 $(LIBDIR)/auto.action
+	#
+	# Services
+	#
+	install -Dt $(DESTSERVICE)$(systemdsystemunitdir) -m644 $(INPTDIR)/services/*.service
+	install -D -m644 $(INPTDIR)/contrib/bash-completion $(DESTDIR)/usr/share/bash-completion/completions/netctl
+	ln -sf netctl "$(DESTDIR)/usr/share/bash-completion/completions/netctl-auto"
+	ln -sf netctl "$(DESTDIR)/usr/share/bash-completion/completions/wifi-menu"
+	install -D -m644 $(INPTDIR)/contrib/zsh-completion "$(DESTDIR)/usr/share/zsh/site-functions/_netctl"
+	#
+	# Services path edit
+	#
+	# netctl.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR_BUILD)/netctl restore" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR_BUILD)/netctl store" \
+		$(INPTDIR)/services/netctl.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl.service
+	# netctl@.service
+	sed -e "/^ExecStart=/c ExecStart=$(NETWORKFILE_BUILD) start %I" \
+		-e "/^ExecStop=/c ExecStop=$(NETWORKFILE_BUILD) stop %I" \
+		$(INPTDIR)/services/netctl@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl@.service
+	# netctl-auto@.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR_BUILD)/netctl-auto start %I" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR_BUILD)/netctl-auto stop %I" \
+		-e "/^ExecStopPost=/c ExecStopPost=$(BINDIR_BUILD)/netctl-auto clean %I" \
+		$(INPTDIR)/services/netctl-auto@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-auto@.service
+	# netctl-ifplugd@.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR_BUILD)/ifplugd -i %I -r $(IFPLUGDDIR_BUILD)/netctl.action -d 0 -bfIns" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR_BUILD)/ifplugd -i %I -k -W" \
+		$(INPTDIR)/services/netctl-ifplugd@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-ifplugd@.service
+	# netctl-sleep.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR_BUILD)/netctl store ; $(BINDIR_BUILD)/netctl stop-all" \
+		-e "/^ExecStop=-/c ExecStop=-$(BINDIR_BUILD)/netctl restore" \
+		$(INPTDIR)/services/netctl-sleep.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-sleep.service
+	# netctl-wait-online.service
+	sed -e "/^ExecStart=/c ExecStart=$(NETWORKFILE_BUILD) wait-online" \
+		$(INPTDIR)/services/netctl-wait-online.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-wait-online.service
+
+install: $(SOURCES)
+	#
+	# Documentation
+	#
+	for i in $(manpages_source) ; do \
+		a2x -d manpage -f manpage -a manversion=$(VERSION) $$i ; \
+	done
+	for j in $(MANPAGES) ; do \
+		gzip -c $$j > $$j.gz ; \
+	done
+	rm -rf $(MANPAGES)
+	mkdir -p $(manpages_dir)
+	install -m644 $(INPTDIR)/docs/netctl.1.gz $(MANDIR)/man1/netctl.1.gz
+	install -m644 $(INPTDIR)/docs/netctl-auto.1.gz $(MANDIR)/man1/netctl-auto.1.gz
+	install -m644 $(INPTDIR)/docs/netctl.profile.5.gz $(MANDIR)/man5/netctl.profile.5.gz
+	install -m644 $(INPTDIR)/docs/netctl.special.7.gz $(MANDIR)/man7/netctl.special.7.gz
+	install -m644 $(INPTDIR)/docs/wifi-menu.1.gz $(MANDIR)/man1/wifi-menu.1.gz
+	rm -rf $(manpages_gzip)
+	#
+	# Configuration files
+	#
+	install -d $(ETCDIR)/{examples,hooks,interfaces}
+	install -m644 $(INPTDIR)/docs/examples/* $(ETCDIR)/examples/
+	#
+	# Libs
+	#
+	install -Dt $(LIBDIR) -m644 $(INPTDIR)/src/lib/{globals,interface,ip,rfkill,wpa}
+	install -Dt $(LIBDIR)/connections -m644 $(INPTDIR)/src/lib/connections/*
+	install -Dt $(LIBDIR)/dhcp -m644 $(INPTDIR)/src/lib/dhcp/*
+	install -m755 $(INPTDIR)/src/lib/{auto.action,network} $(LIBDIR)/
+	#
+	# Libs path edit
+	#
+	sed -e "/^PROFILE_DIR=/c PROFILE_DIR=\"$(ETCDIR)\"" \
+		-e "/^SUBR_DIR=/c SUBR_DIR=\"$(LIBDIR)\"" \
+		$(INPTDIR)/src/lib/globals > $(GLOBALSFILE)
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+		$(INPTDIR)/src/lib/network > $(NETWORKFILE)
+	#
+	# Scripts
+	#
+	install -d $(BINDIR)
+	sed -e "s|@systemdsystemconfdir@|$(systemdsystemconfdir)|g" \
+	    -e "s|@systemdsystemunitdir@|$(systemdsystemunitdir)|g" \
+	    -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+	    $(INPTDIR)/src/netctl.in > $(BINDIR)/netctl
+	chmod 755 $(BINDIR)/netctl
+	install -m755 \
+	    $(INPTDIR)/src/netctl-auto \
+	    $(INPTDIR)/src/wifi-menu \
+	    $(BINDIR)/
+	install -Dm755 $(INPTDIR)/src/ifplugd.action $(IFPLUGDDIR)/netctl.action
+	#
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+		$(INPTDIR)/src/ifplugd.action > $(IFPLUGDDIR)/netctl.action
+	chmod 755 $(IFPLUGDDIR)/netctl.action
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+		$(INPTDIR)/src/netctl-auto > $(BINDIR)/netctl-auto
+	chmod 755 $(BINDIR)/netctl-auto
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+		$(INPTDIR)/src/wifi-menu > $(BINDIR)/wifi-menu
+	chmod 755 $(BINDIR)/wifi-menu
+	sed -e "/^. \/usr\/lib\/netctl\/globals/c . $(GLOBALSFILE)" \
+		$(INPTDIR)/src/lib/auto.action > $(LIBDIR)/auto.action
+	chmod 755 $(LIBDIR)/auto.action
+	#
+	# Services
+	#
+	install -Dt $(DESTSERVICE)$(systemdsystemunitdir) -m644 $(INPTDIR)/services/*.service
+	install -D -m644 $(INPTDIR)/contrib/bash-completion $(DESTDIR)/usr/share/bash-completion/completions/netctl
+	ln -sf netctl "$(DESTDIR)/usr/share/bash-completion/completions/netctl-auto"
+	ln -sf netctl "$(DESTDIR)/usr/share/bash-completion/completions/wifi-menu"
+	install -D -m644 $(INPTDIR)/contrib/zsh-completion "$(DESTDIR)/usr/share/zsh/site-functions/_netctl"
+	#
+	# Services path edit
+	#
+	# netctl.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR)/netctl restore" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR)/netctl store" \
+		$(INPTDIR)/services/netctl.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl.service
+	# netctl@.service
+	sed -e "/^ExecStart=/c ExecStart=$(NETWORKFILE) start %I" \
+		-e "/^ExecStop=/c ExecStop=$(NETWORKFILE) stop %I" \
+		$(INPTDIR)/services/netctl@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl@.service
+	# netctl-auto@.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR)/netctl-auto start %I" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR)/netctl-auto stop %I" \
+		-e "/^ExecStopPost=/c ExecStopPost=$(BINDIR)/netctl-auto clean %I" \
+		$(INPTDIR)/services/netctl-auto@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-auto@.service
+	# netctl-ifplugd@.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR)/ifplugd -i %I -r $(IFPLUGDDIR)/netctl.action -d 0 -bfIns" \
+		-e "/^ExecStop=/c ExecStop=$(BINDIR)/ifplugd -i %I -k -W" \
+		$(INPTDIR)/services/netctl-ifplugd@.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-ifplugd@.service
+	# netctl-sleep.service
+	sed -e "/^ExecStart=/c ExecStart=$(BINDIR)/netctl store ; $(BINDIR)/netctl stop-all" \
+		-e "/^ExecStop=-/c ExecStop=-$(BINDIR)/netctl restore" \
+		$(INPTDIR)/services/netctl-sleep.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-sleep.service
+	# netctl-wait-online.service
+	sed -e "/^ExecStart=/c ExecStart=$(NETWORKFILE) wait-online" \
+		$(INPTDIR)/services/netctl-wait-online.service > $(DESTSERVICE)$(systemdsystemunitdir)/netctl-wait-online.service
+
+all: $(SOURCES) build
+
+uninstall:
+	rm -rf $(INPTDIR) $(manpages_out)
+	rm -rf $(ETCDIR)/
+	rm -rf $(LIBDIR)/
+	rm -rf $(BINDIR)/netctl
+	rm -rf $(BINDIR)/netctl-auto
+	rm -rf $(BINDIR)/wifi-menu
+	rm -rf $(IFPLUGDDIR)/netctl.action $(DESTDIR)/usr/share/bash-completion/completions/netctl
+	rm -rf $(DESTDIR)/usr/share/zsh/site-functions/_netctl
+	rm -rf $(services_out)
+
+clean:
+	rm -rf $(MANPAGES)
+	rm -rf $(manpages_gzip)
+
+cleanbuild: clean
+	rm -rf $(DESTDIR)
+
+cleangit: cleanbuild
+	rm -rf $(INPTDIR)
