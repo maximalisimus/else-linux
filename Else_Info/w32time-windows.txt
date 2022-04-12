@@ -42,8 +42,12 @@ services.msc
 
 
 
-
-
+C:\Windows\System32\sc.exe
+C:\Windows\System32\w32tm.exe /config /syncfromflags:manual /manualpeerlist:ru.pool.ntp.org
+C:\Windows\System32\w32tm.exe /config /update
+C:\Windows\System32\w32tm.exe /resync
+C:\Windows\System32\net.exe time \\utv2-pc /set /y
+C:\Windows\System32\w32tm.exe /resync
 
 
 
