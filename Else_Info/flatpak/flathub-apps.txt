@@ -62,6 +62,10 @@ https://www.flathub.org/apps/details/com.xnview.XnConvert
 flatpak install flathub com.xnview.XnConvert
 flatpak run com.xnview.XnConvert
 
+https://www.flathub.org/apps/details/org.darktable.Darktable
+flatpak install flathub org.darktable.Darktable
+flatpak run org.darktable.Darktable
+
 ### Graphic ###
 
 ### Download ###
