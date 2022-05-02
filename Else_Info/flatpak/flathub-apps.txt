@@ -182,6 +182,10 @@ https://www.flathub.org/apps/details/org.avidemux.Avidemux
 flatpak install flathub org.avidemux.Avidemux
 flatpak run org.avidemux.Avidemux
 
+https://www.flathub.org/apps/details/org.kde.kdenlive
+flatpak install flathub org.kde.kdenlive
+flatpak run org.kde.kdenlive
+
 ### Video Editors ###
 
 ### Office, editors ###
