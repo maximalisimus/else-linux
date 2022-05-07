@@ -22,6 +22,21 @@ find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223c
 
 
 
+cat /var/lib/flatpak/appstream/flathub/x86_64/active/appstream.xml | grep -Ei "thumbnail" | sed 's/^[ \t]*//' | cut -d '>' -f2 | cut -d '<' -f1 > /home/mikl/002/scr.txt
+
+cat ./scr.txt | wc -l
+20280
+
+cat ./scr.txt | grep -Ei "*.-stable.*" | wc -l
+20125
+
+cat ./scr.txt | grep -Ei "*.-stable/" | wc -l
+20109
+
+cat ./scr.txt | grep -Ei "org.mozilla.firefox" | sort
+
+
+
 
 flatpak --gl-drivers
 default
