@@ -3,6 +3,7 @@
 /var/lib/flatpak/appstream/
 flathub
 
+/var/lib/flatpak/appstream/flathub/x86_64/active/icons/128x128/
 
 find /var/lib/flatpak/appstream/flathub/ -type d -iname "icons"
 /var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons
