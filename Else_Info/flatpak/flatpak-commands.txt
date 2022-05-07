@@ -1,5 +1,27 @@
 
 
+/var/lib/flatpak/appstream/
+flathub
+
+
+find /var/lib/flatpak/appstream/flathub/ -type d -iname "icons"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons" -type d -iname "128x128"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons" -type d -iname "64x64"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/64x64
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128" -type f -iname "com.google.Chrome.*"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128/com.google.Chrome.png
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128" -type f -iname "com.github.tchx84.Flatseal.*"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128/com.github.tchx84.Flatseal.png
+
+
+
+
 flatpak --gl-drivers
 default
 host
