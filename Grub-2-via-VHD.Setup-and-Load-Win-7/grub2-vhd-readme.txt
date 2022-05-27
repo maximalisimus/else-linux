@@ -25,7 +25,22 @@ menuentry "Windows 7 Ultimate SP1" {
 	linux   (lp0,1)/vmlinuz root=/dev/vdhost/Partition1 vdisk=$vhd host=/dev/sda1 quiet splash
 	initrd  (lp0,1)/initrd.img
 
- 
+
+menuentry "GPT-vhd-to-RAM" {
+	insmod part_msdos
+	insmod ntfs
+	insmod chain
+	set vhd=/vhd-to-ram-3.0gb.vhd
+	set vhd=/GPT-vhd-to-RAM.vhd
+	search --no-floppy --file  --set=root ${vhd}
+	map --mem --type=hd ${vhd} gd
+	ls (gd,2)/
+	sleep -i -v 5
+	chainloader (gd,2)/EFI/Boot/bootx64.efi
+	boot
+}
+
+
 
 menuentry "Windows 7" {
 	insmod ntfs
