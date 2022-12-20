@@ -1,0 +1,17 @@
+
+
+# Файл нельзя перезаписывать, только добавлять свои записи в конец файла.
+# Файл «40_custom» должен заканчиваться пустой строкой, иначе последний пункт не будет отображаться в меню!
+$ sudo geany /etc/grub.d/40_custom
+$ sudo chmod +x /etc/grub.d/40_custom
+
+echo "adding Windows 7 Ultimate SP1 VHD" >&2
+menuentry "Win 7 bootmgr bcd" {
+	insmod part_msdos
+	insmod ntfs
+	set root=(hd0,4)
+	drivemap -s (hd0) ($root)
+	ntldr /bootmgr
+	#or chainloader +1
+}
+

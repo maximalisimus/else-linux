@@ -1,0 +1,394 @@
+
+
+### Browser and Clients ###
+
+https://www.flathub.org/apps/details/com.github.micahflee.torbrowser-launcher
+flatpak install flathub com.github.micahflee.torbrowser-launcher
+flatpak run com.github.micahflee.torbrowser-launcher
+
+https://www.flathub.org/apps/details/org.briarproject.Briar
+flatpak install flathub org.briarproject.Briar
+flatpak run org.briarproject.Briar
+
+https://www.flathub.org/apps/details/org.onionshare.OnionShare
+flatpak install flathub org.onionshare.OnionShare
+flatpak run org.onionshare.OnionShare
+
+https://www.flathub.org/apps/details/org.mozilla.firefox
+flatpak install flathub org.mozilla.firefox
+flatpak run org.mozilla.firefox
+
+https://www.flathub.org/apps/details/com.google.Chrome
+flatpak install flathub com.google.Chrome
+flatpak run com.google.Chrome
+
+https://www.flathub.org/apps/details/org.telegram.desktop
+flatpak install flathub org.telegram.desktop
+flatpak run org.telegram.desktop
+
+https://www.flathub.org/apps/details/com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord
+flatpak run com.discordapp.Discord
+
+https://www.flathub.org/apps/details/com.viber.Viber
+flatpak install flathub com.viber.Viber
+flatpak run com.viber.Viber
+
+https://www.flathub.org/apps/details/io.github.mimbrero.WhatsAppDesktop
+flatpak install flathub io.github.mimbrero.WhatsAppDesktop
+flatpak run io.github.mimbrero.WhatsAppDesktop
+
+https://www.flathub.org/apps/details/im.pidgin.Pidgin
+flatpak install flathub im.pidgin.Pidgin
+flatpak run im.pidgin.Pidgin
+
+https://www.flathub.org/apps/details/org.gnome.Evolution
+flatpak install flathub org.gnome.Evolution
+flatpak run org.gnome.Evolution
+
+https://www.flathub.org/apps/details/org.mozilla.Thunderbird
+flatpak install flathub org.mozilla.Thunderbird
+flatpak run org.mozilla.Thunderbird
+
+### Browser and Clients ###
+
+### Graphic ###
+
+https://www.flathub.org/apps/details/com.xnview.XnViewMP
+flatpak install flathub com.xnview.XnViewMP
+flatpak run com.xnview.XnViewMP
+
+https://www.flathub.org/apps/details/com.xnview.XnConvert
+flatpak install flathub com.xnview.XnConvert
+flatpak run com.xnview.XnConvert
+
+https://www.flathub.org/apps/details/org.darktable.Darktable
+flatpak install flathub org.darktable.Darktable
+flatpak run org.darktable.Darktable
+
+### Graphic ###
+
+### Download ###
+
+https://www.flathub.org/apps/details/com.transmissionbt.Transmission
+flatpak install flathub com.transmissionbt.Transmission
+flatpak run com.transmissionbt.Transmission
+
+https://www.flathub.org/apps/details/io.github.TransmissionRemoteGtk
+flatpak install flathub io.github.TransmissionRemoteGtk
+flatpak run io.github.TransmissionRemoteGtk
+
+https://www.flathub.org/apps/details/org.kde.kget
+flatpak install flathub org.kde.kget
+flatpak run org.kde.kget
+
+https://www.flathub.org/apps/details/io.github.JaGoLi.ytdl_gui
+flatpak install flathub io.github.JaGoLi.ytdl_gui
+flatpak run io.github.JaGoLi.ytdl_gui
+
+https://www.flathub.org/apps/details/com.nextcloud.desktopclient.nextcloud
+flatpak install flathub com.nextcloud.desktopclient.nextcloud
+flatpak run com.nextcloud.desktopclient.nextcloud
+
+https://www.flathub.org/apps/details/io.github.liberodark.OpenDrive
+flatpak install flathub io.github.liberodark.OpenDrive
+flatpak run io.github.liberodark.OpenDrive
+
+### Download ###
+
+### Graphics ###
+
+https://www.flathub.org/apps/details/org.blender.Blender
+flatpak install flathub org.blender.Blender
+flatpak run org.blender.Blender
+
+https://flathub.org/apps/details/org.freecadweb.FreeCAD
+flatpak install flathub org.freecadweb.FreeCAD
+flatpak run org.freecadweb.FreeCAD
+
+https://flathub.org/apps/details/com.wings3d.WINGS
+flatpak install flathub com.wings3d.WINGS
+flatpak run com.wings3d.WINGS
+
+https://www.flathub.org/apps/details/org.inkscape.Inkscape
+flatpak install flathub org.inkscape.Inkscape
+flatpak run org.inkscape.Inkscape
+
+https://www.flathub.org/apps/details/org.gimp.GIMP
+flatpak install flathub org.gimp.GIMP
+flatpak run org.gimp.GIMP
+
+https://www.flathub.org/apps/details/com.github.PintaProject.Pinta
+flatpak install flathub com.github.PintaProject.Pinta
+flatpak run com.github.PintaProject.Pinta
+
+https://www.flathub.org/apps/details/org.kde.krita
+flatpak install flathub org.kde.krita
+flatpak run org.kde.krita
+
+https://www.flathub.org/apps/details/nl.hjdskes.gcolor3
+flatpak install flathub nl.hjdskes.gcolor3
+flatpak run nl.hjdskes.gcolor3
+
+https://www.flathub.org/apps/details/org.freecadweb.FreeCAD
+flatpak install flathub org.freecadweb.FreeCAD
+flatpak run org.freecadweb.FreeCAD
+
+### Graphics ###
+
+### Audio ###
+
+https://www.flathub.org/apps/details/io.lmms.LMMS
+flatpak install flathub io.lmms.LMMS
+flatpak run io.lmms.LMMS
+
+https://www.flathub.org/apps/details/org.audacityteam.Audacity
+flatpak install flathub org.audacityteam.Audacity
+flatpak run org.audacityteam.Audacity
+
+https://www.flathub.org/apps/details/org.atheme.audacious
+flatpak install flathub org.atheme.audacious
+flatpak run org.atheme.audacious
+
+### Audio ###
+
+### Video ###
+
+https://www.flathub.org/apps/details/info.smplayer.SMPlayer
+flatpak install flathub info.smplayer.SMPlayer
+flatpak run info.smplayer.SMPlayer
+
+https://www.flathub.org/apps/details/org.videolan.VLC
+flatpak install flathub org.videolan.VLC
+flatpak run org.videolan.VLC
+
+### Video ###
+
+### Video converters ###
+
+https://www.flathub.org/apps/details/fr.handbrake.ghb
+flatpak install flathub fr.handbrake.ghb
+flatpak run fr.handbrake.ghb
+
+https://www.flathub.org/apps/details/com.github.robertsanseries.ciano
+flatpak install flathub com.github.robertsanseries.ciano
+flatpak run com.github.robertsanseries.ciano
+
+### Video converters ###
+
+### Video Editors ###
+
+https://www.flathub.org/apps/details/org.shotcut.Shotcut
+flatpak install flathub org.shotcut.Shotcut
+flatpak run org.shotcut.Shotcut
+
+https://www.flathub.org/apps/details/org.pitivi.Pitivi
+flatpak install flathub org.pitivi.Pitivi
+flatpak run org.pitivi.Pitivi
+
+https://www.flathub.org/apps/details/org.openshot.OpenShot
+flatpak install flathub org.openshot.OpenShot
+flatpak run org.openshot.OpenShot
+
+https://www.flathub.org/apps/details/org.avidemux.Avidemux
+flatpak install flathub org.avidemux.Avidemux
+flatpak run org.avidemux.Avidemux
+
+https://www.flathub.org/apps/details/org.kde.kdenlive
+flatpak install flathub org.kde.kdenlive
+flatpak run org.kde.kdenlive
+
+### Video Editors ###
+
+### Office, editors ###
+
+https://www.flathub.org/apps/details/org.libreoffice.LibreOffice
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak run org.libreoffice.LibreOffice
+
+https://www.flathub.org/apps/details/io.atom.Atom
+flatpak install flathub io.atom.Atom
+flatpak run io.atom.Atom
+
+https://www.flathub.org/apps/details/org.gnu.emacs
+flatpak install flathub org.gnu.emacs
+flatpak run org.gnu.emacs
+
+https://www.flathub.org/apps/details/org.kde.okular
+flatpak install flathub org.kde.okular
+flatpak run org.kde.okular
+
+https://www.flathub.org/apps/details/org.vim.Vim
+flatpak install flathub org.vim.Vim
+flatpak run org.vim.Vim
+
+https://www.flathub.org/apps/details/org.geany.Geany
+flatpak install flathub org.geany.Geany
+flatpak run org.geany.Geany
+
+https://www.flathub.org/apps/details/org.xfce.mousepad
+flatpak install flathub org.xfce.mousepad
+flatpak run org.xfce.mousepad
+
+https://www.flathub.org/apps/details/org.gnome.gedit
+flatpak install flathub org.gnome.gedit
+flatpak run org.gnome.gedit
+
+https://www.flathub.org/apps/details/io.github.cloose.CuteMarkEd
+flatpak install flathub io.github.cloose.CuteMarkEd
+flatpak run io.github.cloose.CuteMarkEd
+
+https://www.flathub.org/apps/details/org.texstudio.TeXstudio
+flatpak install flathub org.texstudio.TeXstudio
+flatpak run org.texstudio.TeXstudio
+
+https://www.flathub.org/apps/details/net.xm1math.Texmaker
+flatpak install flathub net.xm1math.Texmaker
+flatpak run net.xm1math.Texmaker
+
+### Office, editors ###
+
+### System ###
+
+https://www.flathub.org/apps/details/org.kde.kalk
+flatpak install flathub org.kde.kalk
+flatpak run org.kde.kalk
+
+https://www.flathub.org/apps/details/org.kde.kcalc
+flatpak install flathub org.kde.kcalc
+flatpak run org.kde.kcalc
+
+https://www.flathub.org/apps/details/ca.desrt.dconf-editor
+flatpak install flathub ca.desrt.dconf-editor
+flatpak run ca.desrt.dconf-editor
+
+https://www.flathub.org/apps/details/org.octave.Octave
+flatpak install flathub org.octave.Octave
+flatpak run org.octave.Octave
+
+https://www.flathub.org/apps/details/org.gnome.Genius
+flatpak install flathub org.gnome.Genius
+flatpak run org.gnome.Genius
+
+### System ###
+
+### Science ###
+
+https://www.flathub.org/apps/details/org.stellarium.Stellarium
+flatpak install flathub org.stellarium.Stellarium
+flatpak run org.stellarium.Stellarium
+
+https://www.flathub.org/apps/details/org.kicad.KiCad
+flatpak install flathub org.kicad.KiCad
+flatpak run org.kicad.KiCad
+
+### Science ###
+
+### Game ###
+
+https://www.flathub.org/apps/details/com.valvesoftware.Steam
+flatpak install flathub com.valvesoftware.Steam
+flatpak run com.valvesoftware.Steam
+
+https://www.flathub.org/apps/details/com.teeworlds.Teeworlds
+flatpak install flathub com.teeworlds.Teeworlds
+flatpak run com.teeworlds.Teeworlds
+
+https://www.flathub.org/apps/details/net.supertuxkart.SuperTuxKart
+flatpak install flathub net.supertuxkart.SuperTuxKart
+flatpak run net.supertuxkart.SuperTuxKart
+
+https://www.flathub.org/apps/details/org.xonotic.Xonotic
+flatpak install flathub org.xonotic.Xonotic
+flatpak run org.xonotic.Xonotic
+
+https://www.flathub.org/apps/details/org.gnome.Aisleriot
+flatpak install flathub org.gnome.Aisleriot
+flatpak run org.gnome.Aisleriot
+
+https://www.flathub.org/apps/details/org.kde.kpat
+flatpak install flathub org.kde.kpat
+flatpak run org.kde.kpat
+
+https://www.flathub.org/apps/details/org.kde.kmines
+flatpak install flathub org.kde.kmines
+flatpak run org.kde.kmines
+
+https://www.flathub.org/apps/details/org.gnome.Chess
+flatpak install flathub org.gnome.Chess
+flatpak run org.gnome.Chess
+
+https://www.flathub.org/apps/details/org.gnome.Sudoku
+flatpak install flathub org.gnome.Sudoku
+flatpak run org.gnome.Sudoku
+
+https://www.flathub.org/apps/details/org.gnome.Hitori
+flatpak install flathub org.gnome.Hitori
+flatpak run org.gnome.Hitori
+
+https://www.flathub.org/apps/details/com.dosbox_x.DOSBox-X
+flatpak install flathub com.dosbox_x.DOSBox-X
+flatpak run com.dosbox_x.DOSBox-X
+
+### Game ###
+
+### Programming ###
+
+https://www.flathub.org/apps/details/cc.arduino.arduinoide
+flatpak install flathub cc.arduino.arduinoide
+flatpak run cc.arduino.arduinoide
+
+https://www.flathub.org/apps/details/com.jetbrains.PyCharm-Community
+flatpak install flathub com.jetbrains.PyCharm-Community
+flatpak run com.jetbrains.PyCharm-Community
+
+https://www.flathub.org/apps/details/org.kde.kdevelop
+flatpak install flathub org.kde.kdevelop
+flatpak run org.kde.kdevelop
+
+https://www.flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community
+flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
+flatpak run com.jetbrains.IntelliJ-IDEA-Community
+
+https://www.flathub.org/apps/details/org.eclipse.Java
+flatpak install flathub org.eclipse.Java
+flatpak run org.eclipse.Java
+
+https://www.flathub.org/apps/details/org.codeblocks.codeblocks
+flatpak install flathub org.codeblocks.codeblocks
+flatpak run org.codeblocks.codeblocks
+
+https://www.flathub.org/apps/details/org.msweet.htmldoc
+flatpak install flathub org.msweet.htmldoc
+flatpak run org.msweet.htmldoc
+
+### Programming ###
+
+### Seccurity ###
+
+https://www.flathub.org/apps/details/com.bitwarden.desktop
+flatpak install flathub com.bitwarden.desktop
+flatpak run com.bitwarden.desktop
+
+https://www.flathub.org/apps/details/org.keepassxc.KeePassXC
+flatpak install flathub org.keepassxc.KeePassXC
+flatpak run org.keepassxc.KeePassXC
+
+https://www.flathub.org/apps/details/com.github.tchx84.Flatseal
+flatpak install flathub com.github.tchx84.Flatseal
+flatpak run com.github.tchx84.Flatseal
+
+### Seccurity ###
+
+
+
+
+
+
+
+
+
+
+
+
+

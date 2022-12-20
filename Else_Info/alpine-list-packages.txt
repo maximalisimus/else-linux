@@ -1,0 +1,217 @@
+
+_base_pkg=(bash btrfs-progs ntp sudo f2fs-tools dialog htop nano vi ntfs-3g linux-headers squashfs-tools upower mlocate testdisk hwinfo mkinitcpio)
+_base_devel_pkg=(bash bzip2 coreutils cryptsetup device-mapper dhcpcd diffutils e2fsprogs file filesystem findutils gawk gcc-libs gettext glibc grep gzip inetutils iproute2 iputils jfsutils less licenses logrotate lvm2 man-db man-pages mdadm nano netctl pacman pciutils perl procps-ng psmisc reiserfsprogs s-nail sed shadow sysfsutils systemd-sysvcompat tar texinfo usbutils util-linux vi which xfsprogs btrfs-progs ntp sudo f2fs-tools dialog htop mc ntfs-3g bash-completion gparted net-tools linux-headers squashfs-tools upower mlocate recordmydesktop testdisk hwinfo mkinitcpio)
+_lts_pkg=(linux-lts linux-lts-dev)
+_krnl_pkg=(linux-headers)
+
+_nm_pkg_2="connman connman-doc"
+connman-nftables connman-openrc connman-openvpn connman-l2tp libconnman-qt-dev libconnman-qt connman-iptables connman-vpnc connman-wireguard
+lua-connman_dbus lua5.2-connman_dbus
+
+_nm_pkg_3="dhcpcd"
+
+_nm_pkg_4="networkmanager networkmanager-cli networkmanager-qt network-manager-applet"
+networkmanager-l2tp networkmanager-bash-completion networkmanager-cli networkmanager-openrc
+networkmanager-openvpn networkmanager-lang networkmanager-qt-dev
+networkmanager-elogind-cli networkmanager-elogind-openrc networkmanager-qt networkmanager-elogind
+
+_network_pkg=(samba libwbclient smb4k smbclient smbnetfs gvfs-smb libgtop)
+
+_docker_pkg=(docker docker-compose)
+_podman_pkd=(podman podman-compose podman-docker buildah)
+
+_mail_srv_pkg=(postfix)
+_namp_srv_pkg=(nginx apache mysql++ mariadb mariadb-clients php phpmyadmin php-fpm php-apache uwsgi)
+_ftp_srv_pkg=(atftp bftpd curlftpfs filezilla gftp lftp tnftp vsftpd)
+_firewall=(ufw gufw)
+_fail2ban=(fail2ban)
+
+_clamav_pkg=(clamav clamav-daemon clamav-scanner)
+
+_wifi_pkg=(iw wireless_tools wpa_actiond wpa_supplicant wicd)
+_broadcom=(b43-fwcutter)
+_bluetooth=(blueman bluez bluez-libs bluez-plugins bluez-utils bluez-tools)
+
+_grub_pkg=(grub os-prober)
+_grub_theme_pkg=(breeze-grub)
+_syslinux_pkg=(syslinux)
+_grub_uefi_pkg=(grub os-prober efibootmgr dosfstools)
+_reefind_pkg=(refind efibootmgr dosfstools)
+_systemd_boot_pkg=(efibootmgr dosfstools)
+
+_intel_pkg=(xf86-video-intel libva-intel-driver intel-ucode)
+_ati_pkg=(xf86-video-ati amd-ucode)
+_nouveau=(xf86-video-nouveau)
+_openchrome=(xf86-video-openchrome)
+_vbox_lts_pkg=(virtualbox-guest-additions virtualbox-guest-additions-x11)
+_vmware_pkg=(xf86-video-vmware xf86-input-vmmouse)
+
+_dm_pkg_1="lxdm"
+_dm_pkg_2="lightdm lightdm-gtk-greeter"
+_dm_pkg_3="sddm sddm-kcm sddm-breeze"
+_dm_pkg_4="slim"
+_dm_pkg_5="gdm"
+
+
+## Desktop environment packages
+
+cinnamon-desktop
+
+polkit-gnome
+
+gnome
+
+gnome-shell
+
+plasma
+plasma-desktop
+
+lxqt and else package
+oxygen-icons
+
+mate
+
+xfce4
+xfce4-pulseaudio-plugin
+
+awesome
+ttf-font-awesome
+vicious
+
+fluxbox
+
+icewm
+icewm-lang
+
+openbox
+openbox-kde
+openbox-gnome
+openbox-libs
+numix-themes-openbox
+
+pekwm
+
+windowmaker
+
+
+## Else
+
+_shells_sh=(bash fish zsh dash tcsh)
+_bash_sh=(bash-completion)
+_zsh_sh=(zsh-completions)
+
+xf86-input-synaptics alsa-utils alsa-plugins volumeicon
+pavucontrol pulseaudio pulseaudio-alsa pulseaudio-equalizer pulseaudio-jack pulsemixer pamixer pulseview
+xdg-user-dirs xdg-utils polkit gvfs gvfs-afc gvfs-mtp gvfs-smb acpid avahi cronie
+
+ark xarchiver file-roller
+unzip zip p7zip
+ttf-liberation ttf-dejavu terminus-font fontforge
+breeze breeze-grub breeze-icons faenza-icon-theme adwaita-icon-theme
+
+CD-DVD: brasero
+
+firefox chromium lynx links
+tor tor-openrc torsocks
+
+_telegramm_pkg=(telegram-desktop)
+_telegramm_dep_pkg=(protobuf)
+_messangers_pkg=(pidgin pidgin-otr)
+_mail_client_pkg=(evolution evolution-ews evolution-on)
+_thunderbird_pkg=(thunderbird faenza-icon-theme-thunderbird)
+
+_transmission_pkg=(transmission transmission-cli transmission-static transmission-remote-gtk \
+	transmission-daemon transmission-remote-gtk-lang transmission-lang \
+	faenza-icon-theme-transmission)
+_torrent_pkg=(ktorrent qbittorrent)
+_download_xpkg=(wget kget)
+_download_pkg=(curl git youtube-dl youtube-dl-bash-completion youtube-dl-fish-completion youtube-dl-zsh-completion)
+_internet_pkg=(openvpn networkmanager-openvpn connman-openvpn)
+_graphic_pkg=(blender inkscape gimp gimp-lang pinta pinta-lang krita krita-lang gcolor3)
+_image_viewer=(viewnior viewnior-lang gthumb gthumb-lang gpicview gpicview-lang)
+_media_pkg=(vlc)
+_audio_players_pkg=(rhythmbox rhythmbox-lang audacious audacious-lang audacious-plugins audacious-plugins-lang)
+_audio_editors_pkg=(audacity audacity-lang lmms)
+_video_converters_pkg=(ffmpeg ffmpeg-libs ffmpeg4 ffmpeg4-libs handbrake handbrake-gtk handbrake-lang)
+_video_editors_pkg=(shotcut pitivi)
+_editor_pkg=(vim geany geany-lang mousepad mousepad-lang gedit micro)
+_code_editor_pkg=(emacs geany)
+_ms_office_pkg=(libreoffice libreoffice-base libreoffice-common \
+			libreoffice-writer libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math \
+				faenza-icon-theme-libreoffice-main faenza-icon-theme-libreoffice faenza-icon-theme-libreoffice-impress \
+				faenza-icon-theme-libreoffice-common faenza-icon-theme-libreoffice-draw faenza-icon-theme-libreoffice-calc \
+				faenza-icon-theme-libreoffice-math aenza-icon-theme-libreoffice-writer \
+			libreoffice-lang-ru \
+		libreoffice-qt5 \
+		libreoffice-connector-postgres \
+		libreoffice-sdk)
+_else_office_pkg=(okular okular-lang evince evince-lang evince-libs evince-nautilus faenza-icon-theme-evince djvulibre libdjvulibre)
+_system_pkg=(ksysguard ksysguard-lang libksysguard libksysguard-lang galculator dmidecode dconf dconf-editor dconf-editor-lang)
+_gpg_pkg=(gpa kgpg kgpg-lang kleopatra kleopatra-lang)
+
+_science_pkg=(bc galculator kcalc kcalc-lang octave stellarium)
+_clipboard_pkg=(xclip gpaste gpaste-lang gpaste-zsh-completion gpaste-gnome gpaste-bash-completion)
+_cad_pkg=(kicad kicad-library kicad-library-3d freecad)
+_virtualization=(aqemu qemu qemu-img qemu-lang qemu-i386 qemu-x86_64 qemu-alpha \
+				qemu-audio-oss qemu-audio-alsa qemu-audio-pa qemu-audio-sdl \
+				qemu-hw-display-virtio-gpu \
+				qemu-modules qemu-hppa qemu-audio-spice qemu-hw-usb-redirect)
+
+_games_pkg=(supertuxkart supertuxkart-static supertuxkart-server \
+			xonotic xonotic-sdl xonotic-glx xonotic-data xonotic-server \
+			aisleriot aisleriot-lang kpat kpat-lang gnome-chess gnome-chess-lang gnuchess gnome-sudoku gnome-sudoku-lang madbomber)
+_emulator_pkg=(dosbox mednafen mednafen-lang mupen64plus pcsx2 ppsspp)
+
+_arduino_pkg=(gcc-avr avrdude avr-libc)
+
+_wine_pkg=(wine wine-mono wine_gecko winetricks faenza-icon-theme-wine winetricks-bash-completion gnome-wine-icon-theme)
+
+_security_pkg=(keepassxc keepassxc-lang veracrypt)
+
+_bash=(shellcheck)
+_make_cmake_pkg=(make cmake)
+_gcc_cpp_pkg=(gcc binutils binutils-avr mingw-w64-binutils)
+_mingw_w64_pkg=(mingw-w64-binutils mingw-w64-crt mingw-w64-gcc mingw-w64-headers mingw-w64-winpthreads)
+_golang_pkg=(go)
+
+_python_pkg=(python2 python3)
+# ln -s /usr/bin/python3 /usr/bin/python
+# curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# python get-pip.py
+# python -m pip install --upgrade pip setuptools virtualenv virtualenvwrapper --upgrade
+
+_qt_creator_pkg=(qt-creator qt5-qtbase qt5-qtbase-x11 qt5-qtbase-doc \
+				qt5-qtbase-mysql qt5-qtbase-sqlite qt5-qtbase-postgresql \
+				qt6-qtbase qt6-qtbase-doc qt6-qtbase-mysql qt6-qtbase-sqlite qt6-qtbase-postgresql)
+
+_gtk3_pkg=(gtk+3.0 libcolord colord-gtk)
+_gtkmm3_pkg=(gtkmm3)
+_gtkmm_dep_pkg=(libsigc++3 cairomm pangomm atkmm atkmm2 pkgconf atk pango cairo)
+_gtk4_pkg=(gtk4.0 gtk4.0-lang gtk4.0-demo colord-gtk libportal-gtk4 libcolord)
+_gtkmm4_pkg=(gtkmm4)
+_java_pkg=(openjdk17-jre openjdk17-jdk openjdk17-demos openjdk17-src)
+_java_ide=(eclipse-ecj)
+_perl_pkg=(perl)
+_ruby_pkg=(ruby)
+_nodejs_pkg=(nodejs)
+_ide_editors_pkg=(codeblocks kdevelop kdevelop-lang)
+_pascal_pkg=(fpc)
+_dialog_pkg=(dialog xdialog zenity kdialog libnotify ncurses ncurses-libs ncurses-terminfo ncurses-static)
+
+_printer_pkg=(cups cups-lang cups-libs cups-pdf print-manager)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

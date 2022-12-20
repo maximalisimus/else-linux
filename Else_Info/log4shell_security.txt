@@ -1,0 +1,36 @@
+
+
+4.Disable formatMsgNoLookups (only for Apache Log4j >= 2.10.0)
+If you use the Log4j version between 2.10.0 and 2.14.1, and can not upgrade to 2.15.0, 
+you can disable message lookup by setting either the system property (source).
+
+Отключить formatMsgNoLookups (только для Apache Log4j >= 2.10.0)
+Если вы используете версию Log4j между 2.10.0 и 2.14.1 и не можете обновиться до 2.15.0, 
+вы можете отключить поиск сообщений, установив системное свойство (источник).
+
+log4j2.formatMsgNoLookups=true
+
+Or the environment variable to true.
+Или переменная окружения в true.
+
+LOG4J_FORMAT_MSG_NO_LOOKUPS=true
+
+5. Remove JndiLookup class (2.0-beta9 <= Apache log4j <= 2.10.0)
+JndiLookup class should be removed for code that use Log4j older than 2.10.0 and cannot upgrade to 2.15.0.
+
+Удалить класс JndiLookup (2.0-beta9 <= Apache log4j <= 2.10.0)
+Класс JndiLookup следует удалить для кода, который использует Log4j старше 2.10.0 и не может быть обновлен до 2.15.0.
+
+$ zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
+
+
+ADBlock
+
+DomainEndings:
+- $(jndi:ldap://
+- (jndi:ldap://
+- jndi
+- ldap
+
+
+

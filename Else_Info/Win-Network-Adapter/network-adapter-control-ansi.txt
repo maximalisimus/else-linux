@@ -1,0 +1,26 @@
+
+
+ipconfig /flushdns
+ipconfig /registerdns
+ipconfig /release "Подключение по локальной сети"
+ipconfig /renew "Подключение по локальной сети"
+
+ipconfig /all
+ipconfig /displaydns
+
+netsh interface show interface
+
+netsh interface set interface "Подключение по локальной сети" disable
+netsh interface set interface "Подключение по локальной сети" enable
+
+netsh interface set interface name="Подключение по локальной сети" admin=DISABLED
+netsh interface set interface name="Подключение по локальной сети" admin=ENABLED
+
+PowerShell
+
+Get-NetAdapter | format-list
+Disable-NetAdapter -Name "Название адаптера" -Confirm:$false
+Enable-NetAdapter -Name "Название адаптера " -Confirm:$false
+
+
+

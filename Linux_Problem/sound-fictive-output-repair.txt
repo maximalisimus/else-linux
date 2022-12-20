@@ -1,0 +1,10 @@
+
+
+mv ~/.config/pulse ~/.config/old_pulse
+alsa-tools alsa-lib alsa-utils alsa-plugins volumeicon lib32-alsa-plugins alsa-card-profiles
+pavucontrol pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulsemixer pasystray pamixer pulseview lib32-libpulse libpulse pipewire
+
+$ rm -rf ~/.config/pavucontrol.ini
+$ rm -rf ~/.config/pulse
+$ rm -rf ~/.pulse/default.pa
+$ rm -rf ~/.cache/sessions/*

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WhatssAppWeb
+Exec=WhatssAppWeb-x64
+Icon=whatsapp-icon
+Type=Application
+Categories=Utility;
+Terminal=false

@@ -1,0 +1,33 @@
+﻿menuentry 'win10PE_X64(BIOS)'{
+        set root='(hd0,msdos1)'
+        echo 'Loading Memdisk...'
+        #insmod memdisk
+        linux16 /grub/syslinux/MEMDISK iso raw
+        echo 'Loading ISO... may take several minutes'
+        initrd16 /winpe/Win10PE_17134x64.iso
+}
+
+# Запустите файл EFI:
+menuentry "win10PE_X64(UEFI)" {
+echo «Начиная EFI SHELL, пожалуйста, подождите ...»
+set root='(hd0,msdos1)'
+#search --file /winpe/bootx64.efi --set=root
+chainloader /winpe/bootx64.efi
+}
+
+
+menuentry 'ubuntu-18.04' {
+insmod fat
+insmod loopback
+insmod iso9660
+loopback loop (hd0,1)/ubuntu-18.04-desktop-amd64.iso
+set root=(loop)
+linux /casper/vmlinuz boot=casper iso-scan/filename=/ubuntu-18.04-desktop-amd64.iso noprompt noeject
+initrd /casper/initrd.lz
+}
+
+menuentry "Maxdos(BIOS)"{
+set root='(hd0,msdos1)'
+linux16 /grub/syslinux/MEMDISK
+initrd16 /maxdos/maxdos.img
+}

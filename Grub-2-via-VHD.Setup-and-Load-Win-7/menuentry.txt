@@ -1,0 +1,39 @@
+
+/etc/grub.d/40_custom
+
+menuentry "Linux Mint VHD" {
+	set vhddisk=/home/mikl/vbox/mint.vhd
+	insmod ext2
+	insmod xfs
+	insmod vhd
+	vhd vhd0 (hd0,1)${vhddisk} --partitions
+	linux (vhd0,1)/casper/vmlinuz boot=casper root=/dev/sdb1 vloop=${vhddisk} quiet splash
+	# root=/dev/vhdhost/Partition1 
+	initrd (vhd0,1)/casper/initrd.lz
+}
+
+menuentry "Linux Mint VHD 2" {
+	set vhddisk=/home/mikl/vbox/mint.vhd
+	insmod ext2
+	insmod xfs
+	set vdhost
+	search --no-floppy -s root -f $vhd
+	loopback lp0 $vhddisk tdisk=VHD
+	linux   (lp0,1)/casper/vmlinuz root=/dev/vdhost/Partition1 vdisk=$vhddisk host=/dev/sdb1 quiet splash
+	initrd  (lp0,1)/casper/initrd.lz
+}
+
+menuentry "Windows 7 VHD" {
+	insmod part_msdos
+	# insmod part_gpt
+	insmod ntfs
+	# insmod fat
+	insmod chain
+	# insmod memdisk
+	set vhddisk=/home/mikl/vbox/windows.vhd
+	search --no-floppy --file  --set=root ${vhddisk}
+	loopback loop ${vhddisk} tdisk=VHD
+	chainloader +1
+	# chainloader /efi/boot/bootx64.efi
+}
+

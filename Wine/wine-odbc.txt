@@ -1,0 +1,55 @@
+
+
+sudo pacman -S unixodbc
+
+.wine/drive_c/windows/syswow64/odbcad32.exe
+.wine/drive_c/windows/systrm32/odbcad32.exe
+
+WINEPREFIX=~/.wine32/ WINEARCH=win32 winetricks mdac27 mdac25 mdac28 riched30 dcom98 jet40
+
+WINEPREFIX=~/.wine32/ WINEARCH=win32 wine odbcad32.exe
+
+
+
+$ winetricks corefonts eufonts lucida opensymbol tahoma cjkfonts
+$ winetricks vb6run
+$ winetricks mdac28
+$ winetricks msxml4 mfc42 jet40 native_oleaut32
+
+MySQL - https://dev.mysql.com/downloads/connector/odbc/5.1.html
+Postgresql - https://www.postgresql.org/ftp/odbc/versions/msi/
+Oracle - http://www.oracle.com/technetwork/database/windows/downloads/utilsoft-098155.html
+MsSQL - https://www.microsoft.com/ru-ru/download/details.aspx?id=36434
+
+$ msiexec /i ./mysql-connector-odbc-5.1.13-win32.msi
+$ msiexec /i ./psqlodbc_x86.msi
+$ msiexec /i ./msodbcsql.msi
+$ wine control
+
+WINEPREFIX="/home/zetah/prefix32" wine msiexec /i psqlodbc.msi
+
+
+WINEARCH=win32 winecfg
+winetricks mdac28
+wine  .wine/drive_c/windows/system32/odbcad32.exe
+winetricks jet40
+wine  .wine/drive_c/windows/system32/odbcad32.exe
+wine /mnt/MY_WIN_CD/setup.exe
+wine .wine/drive_c/MY_install_directory/my_jet_app.exe
+
+isql my_dsn
+WINEDLLOVERRIDES="odbc32=b" wine my_pgsql_app.exe
+
+
+odbcconf.exe configsysdsn ^
+"Microsoft Access Driver (*.mdb, *.accdb)" ^
+"DSN=OurConnectionName;DBQ=X:\Path\to\OurMsAccessDB.mdb"
+
+odbcconf CONFIGSYSDSN "SQL server" "DSN=Alias|Server=SERVER|database=MyBase|Trusted_Connection=Yes"
+
+odbcconf CONFIGSYSDSN "Microsoft Access Driver (*.mdb)" "DSN=Client|Driver=C:\WINDOWS\system32\odbcjt32.dll|FIL=MS Access|DBQ=C:\client.mdb|UID=DBA|PWD=pass|Description=Client"
+
+odbcconf CONFIGSYSDSN "Microsoft Excel Driver (*.xls)" "DSN=test|DBQ=c:\test.xls|DefaultDir=C:|Description=Test"
+
+
+

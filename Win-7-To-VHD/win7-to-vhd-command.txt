@@ -1,0 +1,18 @@
+
+
+Shift+F10 -> CMD
+
+diskpart
+create vdisk file="D:\win7.vhd" type=fixed maximum=25600
+# create vdisk file="G:\win7.vhd" type=expandable maximum=30000
+select vdisk file="D:\win7.vhd"
+attach vdisk
+
+bcdedit
+bcdedit /set {current} /d "Windows 7 from VHD"
+bcdedit /set {default} description "Windows 7 From VHD"
+bcdedit /default {current}
+
+
+
+

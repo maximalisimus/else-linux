@@ -1,0 +1,44 @@
+
+
+
+Enable /etc/network/interfaces:
+
+$ sudo nano /etc/NetworkManager/NetworkManager.conf
+or
+$ sudo nano /etc/NetworkManager/conf.d/managed.conf
+
+[ifupdown]
+managed=true
+
+sudo mkdir -p /etc/network/
+sudo nano /etc/network/interfaces
+
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+allow-hotplug enp0s3
+auto enp0s3
+iface enp0s3 inet static
+# iface enp0s3 inet dhcp
+	address 10.0.2.2
+        netmask 255.255.255.0
+        gateway 10.0.2.1
+        broadcast 10.0.2.255
+        # dns-nameservers 10.0.2.1 8.8.8.8
+
+
+To stop NetworkManager from touching
+/etc/resolv.conf
+set main.dns=none with a configuration file in
+/etc/NetworkManager/conf.d/:
+
+/etc/NetworkManager/conf.d/dns.conf
+[main]
+dns=none
+
+# systemctl stop resolvconf.service
+# systemctl disable resolvconf.service
+
+

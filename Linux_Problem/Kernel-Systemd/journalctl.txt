@@ -1,0 +1,1001 @@
+дек 01 05:55:45 archiso kernel: microcode: microcode updated early to revision 0x2f, date = 2019-02-17
+дек 01 05:55:45 archiso kernel: Linux version 6.0.10-arch2-1 (linux@archlinux) (gcc (GCC) 12.2.0, GNU ld (GNU Binutils) 2.39.0) #1 SMP PREEMPT_DYNAMIC Sat, 26 Nov 2022 16:51:18 +0000
+дек 01 05:55:45 archiso kernel: Command line: BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux archisobasedir=arch archisolabel=ARCHCustom_202211 initrd=/arch/boot/intel-ucode.img,/arch/boot/amd-ucode.img,/arch/boot/x86_64/initramfs-linux.img
+дек 01 05:55:45 archiso kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+дек 01 05:55:45 archiso kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+дек 01 05:55:45 archiso kernel: x86/fpu: Enabled xstate features 0x3, context size is 576 bytes, using 'standard' format.
+дек 01 05:55:45 archiso kernel: signal: max sigframe size: 1520
+дек 01 05:55:45 archiso kernel: BIOS-provided physical RAM map:
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ebff] usable
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x000000000009ec00-0x000000000009ffff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000de526fff] usable
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000de527000-0x00000000dec39fff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000dec3a000-0x00000000deeb9fff] ACPI NVS
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000deeba000-0x00000000deebefff] ACPI data
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000deebf000-0x00000000def01fff] ACPI NVS
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000def02000-0x00000000df5e6fff] usable
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000df5e7000-0x00000000df7ddfff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000df7de000-0x00000000df7fffff] usable
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000fed00000-0x00000000fed03fff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+дек 01 05:55:45 archiso kernel: BIOS-e820: [mem 0x0000000100000000-0x000000011effffff] usable
+дек 01 05:55:45 archiso kernel: NX (Execute Disable) protection: active
+дек 01 05:55:45 archiso kernel: SMBIOS 2.7 present.
+дек 01 05:55:45 archiso kernel: DMI: Gigabyte Technology Co., Ltd. To be filled by O.E.M./H61M-S1, BIOS F5 03/23/2012
+дек 01 05:55:45 archiso kernel: tsc: Fast TSC calibration using PIT
+дек 01 05:55:45 archiso kernel: tsc: Detected 3092.869 MHz processor
+дек 01 05:55:45 archiso kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+дек 01 05:55:45 archiso kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+дек 01 05:55:45 archiso kernel: last_pfn = 0x11f000 max_arch_pfn = 0x400000000
+дек 01 05:55:45 archiso kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+дек 01 05:55:45 archiso kernel: total RAM covered: 4080M
+дек 01 05:55:45 archiso kernel: Found optimal setting for mtrr clean up
+дек 01 05:55:45 archiso kernel:  gran_size: 64K         chunk_size: 32M         num_reg: 5          lose cover RAM: 0G
+дек 01 05:55:45 archiso kernel: e820: update [mem 0xe0000000-0xffffffff] usable ==> reserved
+дек 01 05:55:45 archiso kernel: last_pfn = 0xdf800 max_arch_pfn = 0x400000000
+дек 01 05:55:45 archiso kernel: found SMP MP-table at [mem 0x000fd700-0x000fd70f]
+дек 01 05:55:45 archiso kernel: RAMDISK: [mem 0x7c964000-0x7fffffff]
+дек 01 05:55:45 archiso kernel: ACPI: Early table checksum verification disabled
+дек 01 05:55:45 archiso kernel: ACPI: RSDP 0x00000000000F0490 000024 (v02 ALASKA)
+дек 01 05:55:45 archiso kernel: ACPI: XSDT 0x00000000DEE9D070 00005C (v01 ALASKA A M I    01072009 AMI  00010013)
+дек 01 05:55:45 archiso kernel: ACPI: FACP 0x00000000DEEA62B8 0000F4 (v04 ALASKA A M I    01072009 AMI  00010013)
+дек 01 05:55:45 archiso kernel: ACPI: DSDT 0x00000000DEE9D160 009151 (v02 ALASKA A M I    00000012 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: FACS 0x00000000DEEB8F80 000040
+дек 01 05:55:45 archiso kernel: ACPI: APIC 0x00000000DEEA63B0 000062 (v03 ALASKA A M I    01072009 AMI  00010013)
+дек 01 05:55:45 archiso kernel: ACPI: MCFG 0x00000000DEEA6418 00003C (v01 ALASKA A M I    01072009 MSFT 00000097)
+дек 01 05:55:45 archiso kernel: ACPI: HPET 0x00000000DEEA6458 000038 (v01 ALASKA A M I    01072009 AMI. 00000005)
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0x00000000DEEA6490 000460 (v01 IdeRef IdeTable 00001000 INTL 20091112)
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0x00000000DEEA68F0 0009AA (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0x00000000DEEA72A0 000A92 (v01 PmRef  CpuPm    00003000 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: Reserving FACP table memory at [mem 0xdeea62b8-0xdeea63ab]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving DSDT table memory at [mem 0xdee9d160-0xdeea62b0]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving FACS table memory at [mem 0xdeeb8f80-0xdeeb8fbf]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving APIC table memory at [mem 0xdeea63b0-0xdeea6411]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving MCFG table memory at [mem 0xdeea6418-0xdeea6453]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving HPET table memory at [mem 0xdeea6458-0xdeea648f]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving SSDT table memory at [mem 0xdeea6490-0xdeea68ef]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving SSDT table memory at [mem 0xdeea68f0-0xdeea7299]
+дек 01 05:55:45 archiso kernel: ACPI: Reserving SSDT table memory at [mem 0xdeea72a0-0xdeea7d31]
+дек 01 05:55:45 archiso kernel: No NUMA configuration found
+дек 01 05:55:45 archiso kernel: Faking a node at [mem 0x0000000000000000-0x000000011effffff]
+дек 01 05:55:45 archiso kernel: NODE_DATA(0) allocated [mem 0x11effc000-0x11effffff]
+дек 01 05:55:45 archiso kernel: Zone ranges:
+дек 01 05:55:45 archiso kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+дек 01 05:55:45 archiso kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+дек 01 05:55:45 archiso kernel:   Normal   [mem 0x0000000100000000-0x000000011effffff]
+дек 01 05:55:45 archiso kernel:   Device   empty
+дек 01 05:55:45 archiso kernel: Movable zone start for each node
+дек 01 05:55:45 archiso kernel: Early memory node ranges
+дек 01 05:55:45 archiso kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+дек 01 05:55:45 archiso kernel:   node   0: [mem 0x0000000000100000-0x00000000de526fff]
+дек 01 05:55:45 archiso kernel:   node   0: [mem 0x00000000def02000-0x00000000df5e6fff]
+дек 01 05:55:45 archiso kernel:   node   0: [mem 0x00000000df7de000-0x00000000df7fffff]
+дек 01 05:55:45 archiso kernel:   node   0: [mem 0x0000000100000000-0x000000011effffff]
+дек 01 05:55:45 archiso kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000011effffff]
+дек 01 05:55:45 archiso kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: On node 0, zone DMA: 98 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: On node 0, zone DMA32: 2523 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: On node 0, zone DMA32: 503 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: On node 0, zone Normal: 2048 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: On node 0, zone Normal: 4096 pages in unavailable ranges
+дек 01 05:55:45 archiso kernel: ACPI: PM-Timer IO Port: 0x408
+дек 01 05:55:45 archiso kernel: ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+дек 01 05:55:45 archiso kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+дек 01 05:55:45 archiso kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+дек 01 05:55:45 archiso kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+дек 01 05:55:45 archiso kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+дек 01 05:55:45 archiso kernel: ACPI: HPET id: 0x8086a701 base: 0xfed00000
+дек 01 05:55:45 archiso kernel: TSC deadline timer available
+дек 01 05:55:45 archiso kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x0009efff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xde527000-0xdec39fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xdec3a000-0xdeeb9fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xdeeba000-0xdeebefff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xdeebf000-0xdef01fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xdf5e7000-0xdf7ddfff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xdf800000-0xf7ffffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xf8000000-0xfbffffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfc000000-0xfebfffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfed00000-0xfed03fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfed04000-0xfed1bfff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfed1c000-0xfed1ffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xfedfffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+дек 01 05:55:45 archiso kernel: PM: hibernation: Registered nosave memory: [mem 0xff000000-0xffffffff]
+дек 01 05:55:45 archiso kernel: [mem 0xdf800000-0xf7ffffff] available for PCI devices
+дек 01 05:55:45 archiso kernel: Booting paravirtualized kernel on bare hardware
+дек 01 05:55:45 archiso kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+дек 01 05:55:45 archiso kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:2 nr_node_ids:1
+дек 01 05:55:45 archiso kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u1048576
+дек 01 05:55:45 archiso kernel: pcpu-alloc: s221184 r8192 d28672 u1048576 alloc=1*2097152
+дек 01 05:55:45 archiso kernel: pcpu-alloc: [0] 0 1 
+дек 01 05:55:45 archiso kernel: Fallback order for Node 0: 0 
+дек 01 05:55:45 archiso kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1022909
+дек 01 05:55:45 archiso kernel: Policy zone: Normal
+дек 01 05:55:45 archiso kernel: Kernel command line: BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux archisobasedir=arch archisolabel=ARCHCustom_202211 initrd=/arch/boot/intel-ucode.img,/arch/boot/amd-ucode.img,/arch/boot/x86_64/initramfs-linux.img
+дек 01 05:55:45 archiso kernel: Unknown kernel command line parameters "BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux archisobasedir=arch archisolabel=ARCHCustom_202211", will be passed to user space.
+дек 01 05:55:45 archiso kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+дек 01 05:55:45 archiso kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+дек 01 05:55:45 archiso kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+дек 01 05:55:45 archiso kernel: software IO TLB: area num 2.
+дек 01 05:55:45 archiso kernel: Memory: 3916740K/4157228K available (16391K kernel code, 2090K rwdata, 11376K rodata, 2124K init, 3480K bss, 240228K reserved, 0K cma-reserved)
+дек 01 05:55:45 archiso kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+дек 01 05:55:45 archiso kernel: Kernel/User page tables isolation: enabled
+дек 01 05:55:45 archiso kernel: ftrace: allocating 45971 entries in 180 pages
+дек 01 05:55:45 archiso kernel: ftrace: allocated 180 pages with 4 groups
+дек 01 05:55:45 archiso kernel: Dynamic Preempt: full
+дек 01 05:55:45 archiso kernel: rcu: Preemptible hierarchical RCU implementation.
+дек 01 05:55:45 archiso kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=2.
+дек 01 05:55:45 archiso kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+дек 01 05:55:45 archiso kernel:         Trampoline variant of Tasks RCU enabled.
+дек 01 05:55:45 archiso kernel:         Rude variant of Tasks RCU enabled.
+дек 01 05:55:45 archiso kernel:         Tracing variant of Tasks RCU enabled.
+дек 01 05:55:45 archiso kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+дек 01 05:55:45 archiso kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+дек 01 05:55:45 archiso kernel: NR_IRQS: 20736, nr_irqs: 440, preallocated irqs: 16
+дек 01 05:55:45 archiso kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+дек 01 05:55:45 archiso kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+дек 01 05:55:45 archiso kernel: Console: colour VGA+ 80x25
+дек 01 05:55:45 archiso kernel: printk: console [tty0] enabled
+дек 01 05:55:45 archiso kernel: ACPI: Core revision 20220331
+дек 01 05:55:45 archiso kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+дек 01 05:55:45 archiso kernel: APIC: Switch to symmetric I/O mode setup
+дек 01 05:55:45 archiso kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+дек 01 05:55:45 archiso kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2c94f749402, max_idle_ns: 440795223512 ns
+дек 01 05:55:45 archiso kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6188.47 BogoMIPS (lpj=10309563)
+дек 01 05:55:45 archiso kernel: pid_max: default: 32768 minimum: 301
+дек 01 05:55:45 archiso kernel: LSM: Security Framework initializing
+дек 01 05:55:45 archiso kernel: landlock: Up and running.
+дек 01 05:55:45 archiso kernel: Yama: becoming mindful.
+дек 01 05:55:45 archiso kernel: LSM support for eBPF active
+дек 01 05:55:45 archiso kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+дек 01 05:55:45 archiso kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+дек 01 05:55:45 archiso kernel: x86/cpu: VMX (outside TXT) disabled by BIOS
+дек 01 05:55:45 archiso kernel: CPU0: Thermal monitoring enabled (TM1)
+дек 01 05:55:45 archiso kernel: process: using mwait in idle threads
+дек 01 05:55:45 archiso kernel: Last level iTLB entries: 4KB 512, 2MB 8, 4MB 8
+дек 01 05:55:45 archiso kernel: Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+дек 01 05:55:45 archiso kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+дек 01 05:55:45 archiso kernel: Spectre V2 : Mitigation: Retpolines
+дек 01 05:55:45 archiso kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+дек 01 05:55:45 archiso kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+дек 01 05:55:45 archiso kernel: Spectre V2 : Enabling Restricted Speculation for firmware calls
+дек 01 05:55:45 archiso kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+дек 01 05:55:45 archiso kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+дек 01 05:55:45 archiso kernel: MDS: Mitigation: Clear CPU buffers
+дек 01 05:55:45 archiso kernel: MMIO Stale Data: Unknown: No mitigations
+дек 01 05:55:45 archiso kernel: Freeing SMP alternatives memory: 36K
+дек 01 05:55:45 archiso kernel: smpboot: CPU0: Intel(R) Pentium(R) CPU G870 @ 3.10GHz (family: 0x6, model: 0x2a, stepping: 0x7)
+дек 01 05:55:45 archiso kernel: cblist_init_generic: Setting adjustable number of callback queues.
+дек 01 05:55:45 archiso kernel: cblist_init_generic: Setting shift to 1 and lim to 1.
+дек 01 05:55:45 archiso kernel: cblist_init_generic: Setting shift to 1 and lim to 1.
+дек 01 05:55:45 archiso kernel: cblist_init_generic: Setting shift to 1 and lim to 1.
+дек 01 05:55:45 archiso kernel: Performance Events: PEBS fmt1+, SandyBridge events, 16-deep LBR, full-width counters, Intel PMU driver.
+дек 01 05:55:45 archiso kernel: ... version:                3
+дек 01 05:55:45 archiso kernel: ... bit width:              48
+дек 01 05:55:45 archiso kernel: ... generic registers:      8
+дек 01 05:55:45 archiso kernel: ... value mask:             0000ffffffffffff
+дек 01 05:55:45 archiso kernel: ... max period:             00007fffffffffff
+дек 01 05:55:45 archiso kernel: ... fixed-purpose events:   3
+дек 01 05:55:45 archiso kernel: ... event mask:             00000007000000ff
+дек 01 05:55:45 archiso kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1024
+дек 01 05:55:45 archiso kernel: rcu: Hierarchical SRCU implementation.
+дек 01 05:55:45 archiso kernel: rcu:         Max phase no-delay instances is 1000.
+дек 01 05:55:45 archiso kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+дек 01 05:55:45 archiso kernel: smp: Bringing up secondary CPUs ...
+дек 01 05:55:45 archiso kernel: x86: Booting SMP configuration:
+дек 01 05:55:45 archiso kernel: .... node  #0, CPUs:      #1
+дек 01 05:55:45 archiso kernel: smp: Brought up 1 node, 2 CPUs
+дек 01 05:55:45 archiso kernel: smpboot: Max logical packages: 1
+дек 01 05:55:45 archiso kernel: smpboot: Total of 2 processors activated (12376.95 BogoMIPS)
+дек 01 05:55:45 archiso kernel: devtmpfs: initialized
+дек 01 05:55:45 archiso kernel: x86/mm: Memory block size: 128MB
+дек 01 05:55:45 archiso kernel: ACPI: PM: Registering ACPI NVS region [mem 0xdec3a000-0xdeeb9fff] (2621440 bytes)
+дек 01 05:55:45 archiso kernel: ACPI: PM: Registering ACPI NVS region [mem 0xdeebf000-0xdef01fff] (274432 bytes)
+дек 01 05:55:45 archiso kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+дек 01 05:55:45 archiso kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+дек 01 05:55:45 archiso kernel: pinctrl core: initialized pinctrl subsystem
+дек 01 05:55:45 archiso kernel: PM: RTC time: 05:52:47, date: 2022-12-01
+дек 01 05:55:45 archiso kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+дек 01 05:55:45 archiso kernel: DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+дек 01 05:55:45 archiso kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+дек 01 05:55:45 archiso kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+дек 01 05:55:45 archiso kernel: audit: initializing netlink subsys (disabled)
+дек 01 05:55:45 archiso kernel: audit: type=2000 audit(1669873967.036:1): state=initialized audit_enabled=0 res=1
+дек 01 05:55:45 archiso kernel: thermal_sys: Registered thermal governor 'fair_share'
+дек 01 05:55:45 archiso kernel: thermal_sys: Registered thermal governor 'bang_bang'
+дек 01 05:55:45 archiso kernel: thermal_sys: Registered thermal governor 'step_wise'
+дек 01 05:55:45 archiso kernel: thermal_sys: Registered thermal governor 'user_space'
+дек 01 05:55:45 archiso kernel: thermal_sys: Registered thermal governor 'power_allocator'
+дек 01 05:55:45 archiso kernel: cpuidle: using governor ladder
+дек 01 05:55:45 archiso kernel: cpuidle: using governor menu
+дек 01 05:55:45 archiso kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+дек 01 05:55:45 archiso kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+дек 01 05:55:45 archiso kernel: PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+дек 01 05:55:45 archiso kernel: PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+дек 01 05:55:45 archiso kernel: PCI: Using configuration type 1 for base access
+дек 01 05:55:45 archiso kernel: core: PMU erratum BJ122, BV98, HSD29 workaround disabled, HT off
+дек 01 05:55:45 archiso kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+дек 01 05:55:45 archiso kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+дек 01 05:55:45 archiso kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+дек 01 05:55:45 archiso kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Module Device)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Processor Device)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Processor Aggregator Device)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Linux-Dell-Video)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+дек 01 05:55:45 archiso kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+дек 01 05:55:45 archiso kernel: ACPI: 4 ACPI AML tables successfully acquired and loaded
+дек 01 05:55:45 archiso kernel: ACPI: Dynamic OEM Table Load:
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0xFFFF9617003E6000 00083B (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: Dynamic OEM Table Load:
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0xFFFF961700801C00 000303 (v01 PmRef  ApIst    00003000 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: Dynamic OEM Table Load:
+дек 01 05:55:45 archiso kernel: ACPI: SSDT 0xFFFF96170024D400 000119 (v01 PmRef  ApCst    00003000 INTL 20051117)
+дек 01 05:55:45 archiso kernel: ACPI: Interpreter enabled
+дек 01 05:55:45 archiso kernel: ACPI: PM: (supports S0 S3 S4 S5)
+дек 01 05:55:45 archiso kernel: ACPI: Using IOAPIC for interrupt routing
+дек 01 05:55:45 archiso kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+дек 01 05:55:45 archiso kernel: PCI: Using E820 reservations for host bridge windows
+дек 01 05:55:45 archiso kernel: ACPI: Enabled 15 GPEs in block 00 to 3F
+дек 01 05:55:45 archiso kernel: ACPI: PM: Power Resource [FN00]
+дек 01 05:55:45 archiso kernel: ACPI: PM: Power Resource [FN01]
+дек 01 05:55:45 archiso kernel: ACPI: PM: Power Resource [FN02]
+дек 01 05:55:45 archiso kernel: ACPI: PM: Power Resource [FN03]
+дек 01 05:55:45 archiso kernel: ACPI: PM: Power Resource [FN04]
+дек 01 05:55:45 archiso kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+дек 01 05:55:45 archiso kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+дек 01 05:55:45 archiso kernel: acpi PNP0A08:00: _OSC: OS requested [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+дек 01 05:55:45 archiso kernel: acpi PNP0A08:00: _OSC: platform willing to grant [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+дек 01 05:55:45 archiso kernel: acpi PNP0A08:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+дек 01 05:55:45 archiso kernel: PCI host bridge to bus 0000:00
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000e7fff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfeafffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [mem 0x11f000000-0xfffffffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: root bus resource [bus 00-3e]
+дек 01 05:55:45 archiso kernel: pci 0000:00:00.0: [8086:0100] type 00 class 0x060000
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0: [8086:0101] type 01 class 0x060400
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:16.0: [8086:1c3a] type 00 class 0x078000
+дек 01 05:55:45 archiso kernel: pci 0000:00:16.0: reg 0x10: [mem 0xf7f09000-0xf7f0900f 64bit]
+дек 01 05:55:45 archiso kernel: pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1a.0: [8086:1c2d] type 00 class 0x0c0320
+дек 01 05:55:45 archiso kernel: pci 0000:00:1a.0: reg 0x10: [mem 0xf7f07000-0xf7f073ff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1b.0: [8086:1c20] type 00 class 0x040300
+дек 01 05:55:45 archiso kernel: pci 0000:00:1b.0: reg 0x10: [mem 0xf7f00000-0xf7f03fff 64bit]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.0: [8086:1c10] type 01 class 0x060400
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4: [8086:1c18] type 01 class 0x060400
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1d.0: [8086:1c26] type 00 class 0x0c0320
+дек 01 05:55:45 archiso kernel: pci 0000:00:1d.0: reg 0x10: [mem 0xf7f06000-0xf7f063ff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.0: [8086:1c5c] type 00 class 0x060100
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: [8086:1c00] type 00 class 0x01018f
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x10: [io  0xf0d0-0xf0d7]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x14: [io  0xf0c0-0xf0c3]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x18: [io  0xf0b0-0xf0b7]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x1c: [io  0xf0a0-0xf0a3]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x20: [io  0xf090-0xf09f]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.2: reg 0x24: [io  0xf080-0xf08f]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.3: [8086:1c22] type 00 class 0x0c0500
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xf7f05000-0xf7f050ff 64bit]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.3: reg 0x20: [io  0xf000-0xf01f]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: [8086:1c08] type 00 class 0x010185
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x10: [io  0xf070-0xf077]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x14: [io  0xf060-0xf063]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x18: [io  0xf050-0xf057]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x1c: [io  0xf040-0xf043]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x20: [io  0xf030-0xf03f]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1f.5: reg 0x24: [io  0xf020-0xf02f]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: [1002:5b60] type 00 class 0x030000
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: reg 0x10: [mem 0xe8000000-0xefffffff pref]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: reg 0x14: [io  0xe000-0xe0ff]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: reg 0x18: [mem 0xf7e30000-0xf7e3ffff]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: reg 0x30: [mem 0xf7e00000-0xf7e1ffff pref]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: enabling Extended Tags
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: supports D1 D2
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.1: [1002:5b70] type 00 class 0x038000
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.1: reg 0x10: [mem 0xf7e20000-0xf7e2ffff]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.1: supports D1 D2
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [io  0xe000-0xefff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [mem 0xf7e00000-0xf7efffff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [mem 0xe8000000-0xefffffff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: [10ec:8168] type 00 class 0x020000
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: reg 0x10: [io  0xd000-0xd0ff]
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: reg 0x18: [mem 0xf0004000-0xf0004fff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: reg 0x20: [mem 0xf0000000-0xf0003fff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: supports D1 D2
+дек 01 05:55:45 archiso kernel: pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4: PCI bridge to [bus 03]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4:   bridge window [io  0xd000-0xdfff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4:   bridge window [mem 0xf0000000-0xf00fffff 64bit pref]
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKB disabled
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 4
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 10
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKE disabled
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKF disabled
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 5
+дек 01 05:55:45 archiso kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 3
+дек 01 05:55:45 archiso kernel: iommu: Default domain type: Translated 
+дек 01 05:55:45 archiso kernel: iommu: DMA domain TLB invalidation policy: lazy mode 
+дек 01 05:55:45 archiso kernel: SCSI subsystem initialized
+дек 01 05:55:45 archiso kernel: libata version 3.00 loaded.
+дек 01 05:55:45 archiso kernel: ACPI: bus type USB registered
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver usbfs
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver hub
+дек 01 05:55:45 archiso kernel: usbcore: registered new device driver usb
+дек 01 05:55:45 archiso kernel: pps_core: LinuxPPS API ver. 1 registered
+дек 01 05:55:45 archiso kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+дек 01 05:55:45 archiso kernel: PTP clock support registered
+дек 01 05:55:45 archiso kernel: EDAC MC: Ver: 3.0.0
+дек 01 05:55:45 archiso kernel: NetLabel: Initializing
+дек 01 05:55:45 archiso kernel: NetLabel:  domain hash size = 128
+дек 01 05:55:45 archiso kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+дек 01 05:55:45 archiso kernel: NetLabel:  unlabeled traffic allowed by default
+дек 01 05:55:45 archiso kernel: mctp: management component transport protocol core
+дек 01 05:55:45 archiso kernel: NET: Registered PF_MCTP protocol family
+дек 01 05:55:45 archiso kernel: PCI: Using ACPI for IRQ routing
+дек 01 05:55:45 archiso kernel: PCI: pci_cache_line_size set to 64 bytes
+дек 01 05:55:45 archiso kernel: e820: reserve RAM buffer [mem 0x0009ec00-0x0009ffff]
+дек 01 05:55:45 archiso kernel: e820: reserve RAM buffer [mem 0xde527000-0xdfffffff]
+дек 01 05:55:45 archiso kernel: e820: reserve RAM buffer [mem 0xdf5e7000-0xdfffffff]
+дек 01 05:55:45 archiso kernel: e820: reserve RAM buffer [mem 0xdf800000-0xdfffffff]
+дек 01 05:55:45 archiso kernel: e820: reserve RAM buffer [mem 0x11f000000-0x11fffffff]
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: vgaarb: setting as boot VGA device
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: vgaarb: bridge control possible
+дек 01 05:55:45 archiso kernel: pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+дек 01 05:55:45 archiso kernel: vgaarb: loaded
+дек 01 05:55:45 archiso kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+дек 01 05:55:45 archiso kernel: hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+дек 01 05:55:45 archiso kernel: clocksource: Switched to clocksource tsc-early
+дек 01 05:55:45 archiso kernel: VFS: Disk quotas dquot_6.6.0
+дек 01 05:55:45 archiso kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+дек 01 05:55:45 archiso kernel: pnp: PnP ACPI init
+дек 01 05:55:45 archiso kernel: system 00:00: [mem 0xfed40000-0xfed44fff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x0680-0x069f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x0200-0x020f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0xffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0xffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x0400-0x0453] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x0458-0x047f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x0500-0x057f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:01: [io  0x164e-0x164f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:03: [io  0x0454-0x0457] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:04: [io  0x0a00-0x0a0f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:04: [io  0x0a30-0x0a3f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:04: [io  0x0a20-0x0a2f] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:06: [io  0x04d0-0x04d1] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed1c000-0xfed1ffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed10000-0xfed17fff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed18000-0xfed18fff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed19000-0xfed19fff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xf8000000-0xfbffffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed20000-0xfed3ffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed90000-0xfed93fff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfed45000-0xfed8ffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xff000000-0xffffffff] has been reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xfee00000-0xfeefffff] could not be reserved
+дек 01 05:55:45 archiso kernel: system 00:07: [mem 0xe0000000-0xe0000fff] has been reserved
+дек 01 05:55:45 archiso kernel: pnp: PnP ACPI: found 8 devices
+дек 01 05:55:45 archiso kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+дек 01 05:55:45 archiso kernel: NET: Registered PF_INET protocol family
+дек 01 05:55:45 archiso kernel: IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+дек 01 05:55:45 archiso kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+дек 01 05:55:45 archiso kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+дек 01 05:55:45 archiso kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+дек 01 05:55:45 archiso kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+дек 01 05:55:45 archiso kernel: TCP: Hash tables configured (established 32768 bind 32768)
+дек 01 05:55:45 archiso kernel: MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+дек 01 05:55:45 archiso kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+дек 01 05:55:45 archiso kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+дек 01 05:55:45 archiso kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+дек 01 05:55:45 archiso kernel: NET: Registered PF_XDP protocol family
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [io  0xe000-0xefff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [mem 0xf7e00000-0xf7efffff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:01.0:   bridge window [mem 0xe8000000-0xefffffff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4: PCI bridge to [bus 03]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4:   bridge window [io  0xd000-0xdfff]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1c.4:   bridge window [mem 0xf0000000-0xf00fffff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 7 [mem 0x000d0000-0x000e7fff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 8 [mem 0xe0000000-0xfeafffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:00: resource 9 [mem 0x11f000000-0xfffffffff window]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:01: resource 0 [io  0xe000-0xefff]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:01: resource 1 [mem 0xf7e00000-0xf7efffff]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:01: resource 2 [mem 0xe8000000-0xefffffff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:03: resource 0 [io  0xd000-0xdfff]
+дек 01 05:55:45 archiso kernel: pci_bus 0000:03: resource 2 [mem 0xf0000000-0xf00fffff 64bit pref]
+дек 01 05:55:45 archiso kernel: pci 0000:00:1a.0: quirk_usb_early_handoff+0x0/0x750 took 19533 usecs
+дек 01 05:55:45 archiso kernel: pci 0000:00:1d.0: quirk_usb_early_handoff+0x0/0x750 took 19527 usecs
+дек 01 05:55:45 archiso kernel: PCI: CLS 64 bytes, default 64
+дек 01 05:55:45 archiso kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+дек 01 05:55:45 archiso kernel: software IO TLB: mapped [mem 0x00000000da527000-0x00000000de527000] (64MB)
+дек 01 05:55:45 archiso kernel: Trying to unpack rootfs image as initramfs...
+дек 01 05:55:45 archiso kernel: Initialise system trusted keyrings
+дек 01 05:55:45 archiso kernel: Key type blacklist registered
+дек 01 05:55:45 archiso kernel: workingset: timestamp_bits=41 max_order=20 bucket_order=0
+дек 01 05:55:45 archiso kernel: zbud: loaded
+дек 01 05:55:45 archiso kernel: integrity: Platform Keyring initialized
+дек 01 05:55:45 archiso kernel: integrity: Machine keyring initialized
+дек 01 05:55:45 archiso kernel: Key type asymmetric registered
+дек 01 05:55:45 archiso kernel: Asymmetric key parser 'x509' registered
+дек 01 05:55:45 archiso kernel: tsc: Refined TSC clocksource calibration: 3092.974 MHz
+дек 01 05:55:45 archiso kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2c955ac38be, max_idle_ns: 440795348546 ns
+дек 01 05:55:45 archiso kernel: clocksource: Switched to clocksource tsc
+дек 01 05:55:45 archiso kernel: Freeing initrd memory: 55920K
+дек 01 05:55:45 archiso kernel: alg: self-tests for CTR-KDF (hmac(sha256)) passed
+дек 01 05:55:45 archiso kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+дек 01 05:55:45 archiso kernel: io scheduler mq-deadline registered
+дек 01 05:55:45 archiso kernel: io scheduler kyber registered
+дек 01 05:55:45 archiso kernel: io scheduler bfq registered
+дек 01 05:55:45 archiso kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+дек 01 05:55:45 archiso kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+дек 01 05:55:45 archiso kernel: ACPI: button: Power Button [PWRB]
+дек 01 05:55:45 archiso kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+дек 01 05:55:45 archiso kernel: ACPI: button: Power Button [PWRF]
+дек 01 05:55:45 archiso kernel: thermal LNXTHERM:00: registered as thermal_zone0
+дек 01 05:55:45 archiso kernel: ACPI: thermal: Thermal Zone [TZ00] (28 C)
+дек 01 05:55:45 archiso kernel: thermal LNXTHERM:01: registered as thermal_zone1
+дек 01 05:55:45 archiso kernel: ACPI: thermal: Thermal Zone [TZ01] (30 C)
+дек 01 05:55:45 archiso kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+дек 01 05:55:45 archiso kernel: Non-volatile memory driver v1.3
+дек 01 05:55:45 archiso kernel: Linux agpgart interface v0.103
+дек 01 05:55:45 archiso kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+дек 01 05:55:45 archiso kernel: ACPI: bus type drm_connector registered
+дек 01 05:55:45 archiso kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+дек 01 05:55:45 archiso kernel: ehci-pci: EHCI PCI platform driver
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1a.0: EHCI Host Controller
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1a.0: new USB bus registered, assigned bus number 1
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1a.0: debug port 2
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1a.0: irq 16, io mem 0xf7f07000
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+дек 01 05:55:45 archiso kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.00
+дек 01 05:55:45 archiso kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+дек 01 05:55:45 archiso kernel: usb usb1: Product: EHCI Host Controller
+дек 01 05:55:45 archiso kernel: usb usb1: Manufacturer: Linux 6.0.10-arch2-1 ehci_hcd
+дек 01 05:55:45 archiso kernel: usb usb1: SerialNumber: 0000:00:1a.0
+дек 01 05:55:45 archiso kernel: hub 1-0:1.0: USB hub found
+дек 01 05:55:45 archiso kernel: hub 1-0:1.0: 2 ports detected
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1d.0: EHCI Host Controller
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 2
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1d.0: debug port 2
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1d.0: irq 23, io mem 0xf7f06000
+дек 01 05:55:45 archiso kernel: ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+дек 01 05:55:45 archiso kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.00
+дек 01 05:55:45 archiso kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+дек 01 05:55:45 archiso kernel: usb usb2: Product: EHCI Host Controller
+дек 01 05:55:45 archiso kernel: usb usb2: Manufacturer: Linux 6.0.10-arch2-1 ehci_hcd
+дек 01 05:55:45 archiso kernel: usb usb2: SerialNumber: 0000:00:1d.0
+дек 01 05:55:45 archiso kernel: hub 2-0:1.0: USB hub found
+дек 01 05:55:45 archiso kernel: hub 2-0:1.0: 2 ports detected
+дек 01 05:55:45 archiso kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+дек 01 05:55:45 archiso kernel: ohci-pci: OHCI PCI platform driver
+дек 01 05:55:45 archiso kernel: uhci_hcd: USB Universal Host Controller Interface driver
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver usbserial_generic
+дек 01 05:55:45 archiso kernel: usbserial: USB Serial support registered for generic
+дек 01 05:55:45 archiso kernel: rtc_cmos 00:02: RTC can wake from S4
+дек 01 05:55:45 archiso kernel: rtc_cmos 00:02: registered as rtc0
+дек 01 05:55:45 archiso kernel: rtc_cmos 00:02: setting system clock to 2022-12-01T05:52:51 UTC (1669873971)
+дек 01 05:55:45 archiso kernel: rtc_cmos 00:02: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+дек 01 05:55:45 archiso kernel: intel_pstate: Intel P-state driver initializing
+дек 01 05:55:45 archiso kernel: ledtrig-cpu: registered to indicate activity on CPUs
+дек 01 05:55:45 archiso kernel: hid: raw HID events driver (C) Jiri Kosina
+дек 01 05:55:45 archiso kernel: drop_monitor: Initializing network drop monitor service
+дек 01 05:55:45 archiso kernel: Initializing XFRM netlink socket
+дек 01 05:55:45 archiso kernel: NET: Registered PF_INET6 protocol family
+дек 01 05:55:45 archiso kernel: Segment Routing with IPv6
+дек 01 05:55:45 archiso kernel: RPL Segment Routing with IPv6
+дек 01 05:55:45 archiso kernel: In-situ OAM (IOAM) with IPv6
+дек 01 05:55:45 archiso kernel: NET: Registered PF_PACKET protocol family
+дек 01 05:55:45 archiso kernel: microcode: sig=0x206a7, pf=0x2, revision=0x2f
+дек 01 05:55:45 archiso kernel: microcode: Microcode Update Driver: v2.2.
+дек 01 05:55:45 archiso kernel: IPI shorthand broadcast: enabled
+дек 01 05:55:45 archiso kernel: sched_clock: Marking stable (3820388631, 1988389)->(3824822140, -2445120)
+дек 01 05:55:45 archiso kernel: registered taskstats version 1
+дек 01 05:55:45 archiso kernel: Loading compiled-in X.509 certificates
+дек 01 05:55:45 archiso kernel: Loaded X.509 cert 'Build time autogenerated kernel key: a3f5251ce6c47362f47989b63983a0be359be80c'
+дек 01 05:55:45 archiso kernel: zswap: loaded using pool lz4/z3fold
+дек 01 05:55:45 archiso kernel: Key type .fscrypt registered
+дек 01 05:55:45 archiso kernel: Key type fscrypt-provisioning registered
+дек 01 05:55:45 archiso kernel: PM:   Magic number: 2:977:869
+дек 01 05:55:45 archiso kernel: RAS: Correctable Errors collector initialized.
+дек 01 05:55:45 archiso kernel: Freeing unused decrypted memory: 2036K
+дек 01 05:55:45 archiso kernel: Freeing unused kernel image (initmem) memory: 2124K
+дек 01 05:55:45 archiso kernel: Write protecting the kernel read-only data: 30720k
+дек 01 05:55:45 archiso kernel: Freeing unused kernel image (text/rodata gap) memory: 2040K
+дек 01 05:55:45 archiso kernel: Freeing unused kernel image (rodata/data gap) memory: 912K
+дек 01 05:55:45 archiso kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+дек 01 05:55:45 archiso kernel: rodata_test: all tests were successful
+дек 01 05:55:45 archiso kernel: x86/mm: Checking user space page tables
+дек 01 05:55:45 archiso kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+дек 01 05:55:45 archiso kernel: Run /init as init process
+дек 01 05:55:45 archiso kernel:   with arguments:
+дек 01 05:55:45 archiso kernel:     /init
+дек 01 05:55:45 archiso kernel:   with environment:
+дек 01 05:55:45 archiso kernel:     HOME=/
+дек 01 05:55:45 archiso kernel:     TERM=linux
+дек 01 05:55:45 archiso kernel:     BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux
+дек 01 05:55:45 archiso kernel:     archisobasedir=arch
+дек 01 05:55:45 archiso kernel:     archisolabel=ARCHCustom_202211
+дек 01 05:55:45 archiso kernel: usb 1-1: new high-speed USB device number 2 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1: new high-speed USB device number 2 using ehci-pci
+дек 01 05:55:45 archiso kernel: i8042: PNP: PS/2 Controller [PNP0f03:PS2M] at 0x60,0x64 irq 12
+дек 01 05:55:45 archiso kernel: i8042: PNP: PS/2 controller doesn't have KBD irq; using default 1
+дек 01 05:55:45 archiso kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+дек 01 05:55:45 archiso kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+дек 01 05:55:45 archiso kernel: ata_piix 0000:00:1f.2: version 2.13
+дек 01 05:55:45 archiso kernel: ata_piix 0000:00:1f.2: MAP [ P0 P2 P1 P3 ]
+дек 01 05:55:45 archiso kernel: usb 1-1: New USB device found, idVendor=8087, idProduct=0024, bcdDevice= 0.00
+дек 01 05:55:45 archiso kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+дек 01 05:55:45 archiso kernel: hub 1-1:1.0: USB hub found
+дек 01 05:55:45 archiso kernel: hub 1-1:1.0: 4 ports detected
+дек 01 05:55:45 archiso kernel: usb 2-1: New USB device found, idVendor=8087, idProduct=0024, bcdDevice= 0.00
+дек 01 05:55:45 archiso kernel: usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+дек 01 05:55:45 archiso kernel: hub 2-1:1.0: USB hub found
+дек 01 05:55:45 archiso kernel: hub 2-1:1.0: 6 ports detected
+дек 01 05:55:45 archiso kernel: [drm] radeon kernel modesetting enabled.
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: vgaarb: deactivate vga console
+дек 01 05:55:45 archiso kernel: scsi host0: ata_piix
+дек 01 05:55:45 archiso kernel: Console: switching to colour dummy device 80x25
+дек 01 05:55:45 archiso kernel: [drm] initializing kernel modesetting (RV380 0x1002:0x5B60 0x1043:0x002A 0x00).
+дек 01 05:55:45 archiso kernel: resource sanity check: requesting [mem 0x000c0000-0x000dffff], which spans more than PCI Bus 0000:00 [mem 0x000d0000-0x000e7fff window]
+дек 01 05:55:45 archiso kernel: caller pci_map_rom+0x69/0x190 mapping multiple BARs
+дек 01 05:55:45 archiso kernel: [drm] Generation 2 PCI interface, using max accessible memory
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: VRAM: 128M 0x00000000E8000000 - 0x00000000EFFFFFFF (128M used)
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: GTT: 512M 0x00000000C8000000 - 0x00000000E7FFFFFF
+дек 01 05:55:45 archiso kernel: [drm] Detected VRAM RAM=128M, BAR=128M
+дек 01 05:55:45 archiso kernel: [drm] RAM width 64bits DDR
+дек 01 05:55:45 archiso kernel: [drm] radeon: 128M of VRAM memory ready
+дек 01 05:55:45 archiso kernel: [drm] radeon: 512M of GTT memory ready.
+дек 01 05:55:45 archiso kernel: [drm] GART: num cpu pages 131072, num gpu pages 131072
+дек 01 05:55:45 archiso kernel: [drm] radeon: 1 quad pipes, 1 Z pipes initialized
+дек 01 05:55:45 archiso kernel: [drm] PCIE GART of 512M enabled (table at 0x00000000E8040000).
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: WB enabled
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: fence driver on ring 0 use gpu addr 0x00000000c8000000
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: radeon: MSI limited to 32-bit
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: radeon: using MSI.
+дек 01 05:55:45 archiso kernel: [drm] radeon: irq initialized.
+дек 01 05:55:45 archiso kernel: [drm] Loading R300 Microcode
+дек 01 05:55:45 archiso kernel: [drm] radeon: ring at 0x00000000C8001000
+дек 01 05:55:45 archiso kernel: [drm] ring test succeeded in 2 usecs
+дек 01 05:55:45 archiso kernel: scsi host1: ata_piix
+дек 01 05:55:45 archiso kernel: [drm] ib test succeeded in 0 usecs
+дек 01 05:55:45 archiso kernel: ata1: SATA max UDMA/133 cmd 0xf0d0 ctl 0xf0c0 bmdma 0xf090 irq 19
+дек 01 05:55:45 archiso kernel: ata2: SATA max UDMA/133 cmd 0xf0b0 ctl 0xf0a0 bmdma 0xf098 irq 19
+дек 01 05:55:45 archiso kernel: ata_piix 0000:00:1f.5: MAP [ P0 -- P1 -- ]
+дек 01 05:55:45 archiso kernel: [drm] Radeon Display Connectors
+дек 01 05:55:45 archiso kernel: [drm] Connector 0:
+дек 01 05:55:45 archiso kernel: [drm]   VGA-1
+дек 01 05:55:45 archiso kernel: [drm]   DDC: 0x60 0x60 0x60 0x60 0x60 0x60 0x60 0x60
+дек 01 05:55:45 archiso kernel: [drm]   Encoders:
+дек 01 05:55:45 archiso kernel: [drm]     CRT1: INTERNAL_DAC1
+дек 01 05:55:45 archiso kernel: [drm] Connector 1:
+дек 01 05:55:45 archiso kernel: [drm]   DVI-I-1
+дек 01 05:55:45 archiso kernel: [drm]   HPD1
+дек 01 05:55:45 archiso kernel: [drm]   DDC: 0x64 0x64 0x64 0x64 0x64 0x64 0x64 0x64
+дек 01 05:55:45 archiso kernel: [drm]   Encoders:
+дек 01 05:55:45 archiso kernel: [drm]     CRT2: INTERNAL_DAC2
+дек 01 05:55:45 archiso kernel: [drm]     DFP1: INTERNAL_TMDS1
+дек 01 05:55:45 archiso kernel: [drm] Connector 2:
+дек 01 05:55:45 archiso kernel: [drm]   SVIDEO-1
+дек 01 05:55:45 archiso kernel: [drm]   Encoders:
+дек 01 05:55:45 archiso kernel: [drm]     TV1: INTERNAL_DAC2
+дек 01 05:55:45 archiso kernel: scsi host2: ata_piix
+дек 01 05:55:45 archiso kernel: scsi host3: ata_piix
+дек 01 05:55:45 archiso kernel: ata3: SATA max UDMA/133 cmd 0xf070 ctl 0xf060 bmdma 0xf030 irq 19
+дек 01 05:55:45 archiso kernel: ata4: SATA max UDMA/133 cmd 0xf050 ctl 0xf040 bmdma 0xf038 irq 19
+дек 01 05:55:45 archiso kernel: [drm] fb mappable at 0xE80C0000
+дек 01 05:55:45 archiso kernel: [drm] vram apper at 0xE8000000
+дек 01 05:55:45 archiso kernel: [drm] size 4227072
+дек 01 05:55:45 archiso kernel: [drm] fb depth is 24
+дек 01 05:55:45 archiso kernel: [drm]    pitch is 5504
+дек 01 05:55:45 archiso kernel: fbcon: radeondrmfb (fb0) is primary device
+дек 01 05:55:45 archiso kernel: Console: switching to colour frame buffer device 170x48
+дек 01 05:55:45 archiso kernel: radeon 0000:01:00.0: [drm] fb0: radeondrmfb frame buffer device
+дек 01 05:55:45 archiso kernel: [drm] Initialized radeon 2.50.0 20080528 for 0000:01:00.0 on minor 0
+дек 01 05:55:45 archiso kernel: usb 1-1.2: new high-speed USB device number 3 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1.1: new high-speed USB device number 3 using ehci-pci
+дек 01 05:55:45 archiso kernel: ata3: SATA link down (SStatus 0 SControl 330)
+дек 01 05:55:45 archiso kernel: ata4: SATA link down (SStatus 0 SControl 330)
+дек 01 05:55:45 archiso kernel: usb 2-1.1: New USB device found, idVendor=048d, idProduct=1336, bcdDevice= 1.00
+дек 01 05:55:45 archiso kernel: usb 2-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+дек 01 05:55:45 archiso kernel: usb 2-1.1: Product: Mass Storage Device
+дек 01 05:55:45 archiso kernel: usb 2-1.1: Manufacturer: Generic   
+дек 01 05:55:45 archiso kernel: usb 2-1.1: SerialNumber: 00000000000006
+дек 01 05:55:45 archiso kernel: usb 2-1.3: new full-speed USB device number 4 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device descriptor read/64, error -32
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device descriptor read/64, error -32
+дек 01 05:55:45 archiso kernel: usb 2-1.3: new full-speed USB device number 5 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device descriptor read/64, error -32
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device descriptor read/64, error -32
+дек 01 05:55:45 archiso kernel: ata1.01: failed to resume link (SControl 0)
+дек 01 05:55:45 archiso kernel: ata2.01: failed to resume link (SControl 0)
+дек 01 05:55:45 archiso kernel: usb 2-1-port3: attempt power cycle
+дек 01 05:55:45 archiso kernel: ata1.00: SATA link up 3.0 Gbps (SStatus 123 SControl 330)
+дек 01 05:55:45 archiso kernel: ata1.01: SATA link down (SStatus 0 SControl 0)
+дек 01 05:55:45 archiso kernel: ata2.00: SATA link up 1.5 Gbps (SStatus 113 SControl 330)
+дек 01 05:55:45 archiso kernel: ata2.01: SATA link down (SStatus 0 SControl 0)
+дек 01 05:55:45 archiso kernel: ata2.00: ATAPI: TSSTcorp CDDVDW SH-222BB, SB00, max UDMA/100
+дек 01 05:55:45 archiso kernel: ata1.00: ATA-8: ST500DM002-1BD142, KC45, max UDMA/133
+дек 01 05:55:45 archiso kernel: ata1.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 0/32)
+дек 01 05:55:45 archiso kernel: ata2.00: configured for UDMA/100
+дек 01 05:55:45 archiso kernel: ata1.00: configured for UDMA/133
+дек 01 05:55:45 archiso kernel: scsi 0:0:0:0: Direct-Access     ATA      ST500DM002-1BD14 KC45 PQ: 0 ANSI: 5
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/466 GiB)
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] Write Protect is off
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] Preferred minimum I/O size 4096 bytes
+дек 01 05:55:45 archiso kernel: scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW SH-222BB  SB00 PQ: 0 ANSI: 5
+дек 01 05:55:45 archiso kernel:  sda: sda1 sda2 sda3 sda4 < >
+дек 01 05:55:45 archiso kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+дек 01 05:55:45 archiso kernel: [drm] amdgpu kernel modesetting enabled.
+дек 01 05:55:45 archiso kernel: usb-storage 2-1.1:1.0: USB Mass Storage device detected
+дек 01 05:55:45 archiso kernel: amdgpu: CRAT table not found
+дек 01 05:55:45 archiso kernel: amdgpu: Virtual CRAT table created for CPU
+дек 01 05:55:45 archiso kernel: amdgpu: Topology: Add CPU node
+дек 01 05:55:45 archiso kernel: [drm] initializing kernel modesetting (IP DISCOVERY 0x1002:0x5B70 0x1043:0x002B 0x00).
+дек 01 05:55:45 archiso kernel: amdgpu 0000:01:00.1: amdgpu: Fatal error during GPU init
+дек 01 05:55:45 archiso kernel: amdgpu: probe of 0000:01:00.1 failed with error -12
+дек 01 05:55:45 archiso kernel: BUG: kernel NULL pointer dereference, address: 0000000000000000
+дек 01 05:55:45 archiso kernel: #PF: supervisor write access in kernel mode
+дек 01 05:55:45 archiso kernel: #PF: error_code(0x0002) - not-present page
+дек 01 05:55:45 archiso kernel: PGD 0 P4D 0 
+дек 01 05:55:45 archiso kernel: Oops: 0002 [#1] PREEMPT SMP PTI
+дек 01 05:55:45 archiso kernel: CPU: 1 PID: 149 Comm: systemd-udevd Not tainted 6.0.10-arch2-1 #1 3d3fce4ec0004db306622d2292d9287c474c57fb
+дек 01 05:55:45 archiso kernel: Hardware name: Gigabyte Technology Co., Ltd. To be filled by O.E.M./H61M-S1, BIOS F5 03/23/2012
+дек 01 05:55:45 archiso kernel: RIP: 0010:amdgpu_device_fini_sw+0x2a4/0x390 [amdgpu]
+дек 01 05:55:45 archiso kernel: Code: 85 00 00 00 48 89 df e8 ca d3 04 00 48 83 bb f0 5d 00 00 00 74 08 48 89 df e8 18 5f 04 00 48 8b bb 10 8b 01 00 b8 ff ff ff ff <f0> 0f c1 07 83 f8 01 74 4f 85 c0 0f 8e c6 00 00 00 48 c7 83 10 8b
+дек 01 05:55:45 archiso kernel: RSP: 0018:ffffaa620059bbd8 EFLAGS: 00010246
+дек 01 05:55:45 archiso kernel: RAX: 00000000ffffffff RBX: ffff961712a20000 RCX: 0000000000000000
+дек 01 05:55:45 archiso kernel: RDX: 0000000000030600 RSI: 0000000000000000 RDI: 0000000000000000
+дек 01 05:55:45 archiso kernel: RBP: ffff961712a20010 R08: ffffffffb70ea002 R09: 0000000000000010
+дек 01 05:55:45 archiso kernel: R10: 0000000000000036 R11: ffff96170f173918 R12: ffffaa620059bc58
+дек 01 05:55:45 archiso kernel: R13: ffff961700c9b0d0 R14: ffff961700c9b374 R15: 0000000000000000
+дек 01 05:55:45 archiso kernel: FS:  00007fddf273a080(0000) GS:ffff96171ad00000(0000) knlGS:0000000000000000
+дек 01 05:55:45 archiso kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+дек 01 05:55:45 archiso kernel: CR2: 0000000000000000 CR3: 00000001057d0004 CR4: 00000000000606e0
+дек 01 05:55:45 archiso kernel: Call Trace:
+дек 01 05:55:45 archiso kernel:  <TASK>
+дек 01 05:55:45 archiso kernel:  amdgpu_driver_release_kms+0x16/0x30 [amdgpu 215b94997040004ed4f03fa0c895914ffbe9477a]
+дек 01 05:55:45 archiso kernel:  devm_drm_dev_init_release+0x49/0x70
+дек 01 05:55:45 archiso kernel:  release_nodes+0x40/0xb0
+дек 01 05:55:45 archiso kernel:  devres_release_all+0x8c/0xc0
+дек 01 05:55:45 archiso kernel:  device_unbind_cleanup+0xe/0x70
+дек 01 05:55:45 archiso kernel:  really_probe+0x242/0x380
+дек 01 05:55:45 archiso kernel:  ? pm_runtime_barrier+0x54/0x90
+дек 01 05:55:45 archiso kernel:  __driver_probe_device+0x78/0x170
+дек 01 05:55:45 archiso kernel:  driver_probe_device+0x1f/0x90
+дек 01 05:55:45 archiso kernel:  __driver_attach+0xd5/0x1d0
+дек 01 05:55:45 archiso kernel:  ? __device_attach_driver+0x110/0x110
+дек 01 05:55:45 archiso kernel:  bus_for_each_dev+0x8b/0xd0
+дек 01 05:55:45 archiso kernel:  bus_add_driver+0x1b2/0x200
+дек 01 05:55:45 archiso kernel:  driver_register+0x8d/0xe0
+дек 01 05:55:45 archiso kernel:  ? 0xffffffffc1074000
+дек 01 05:55:45 archiso kernel:  do_one_initcall+0x5d/0x220
+дек 01 05:55:45 archiso kernel:  do_init_module+0x4a/0x1e0
+дек 01 05:55:45 archiso kernel:  __do_sys_finit_module+0xac/0x120
+дек 01 05:55:45 archiso kernel:  do_syscall_64+0x5f/0x90
+дек 01 05:55:45 archiso kernel:  ? do_syscall_64+0x6b/0x90
+дек 01 05:55:45 archiso kernel:  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+дек 01 05:55:45 archiso kernel: RIP: 0033:0x7fddf32367fd
+дек 01 05:55:45 archiso kernel: Code: 5d c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 5b 75 0d 00 f7 d8 64 89 01 48
+дек 01 05:55:45 archiso kernel: RSP: 002b:00007ffcd33c4258 EFLAGS: 00000246 ORIG_RAX: 0000000000000139
+дек 01 05:55:45 archiso kernel: RAX: ffffffffffffffda RBX: 000055a211c48c10 RCX: 00007fddf32367fd
+дек 01 05:55:45 archiso kernel: RDX: 0000000000000000 RSI: 00007fddf338a343 RDI: 0000000000000010
+дек 01 05:55:45 archiso kernel: RBP: 00007fddf338a343 R08: 0000000000000000 R09: 00007ffcd33c4380
+дек 01 05:55:45 archiso kernel: R10: 0000000000000010 R11: 0000000000000246 R12: 0000000000020000
+дек 01 05:55:45 archiso kernel: R13: 000055a211c31d80 R14: 000055a211c48c10 R15: 000055a211c4a790
+дек 01 05:55:45 archiso kernel:  </TASK>
+дек 01 05:55:45 archiso kernel: Modules linked in: pata_acpi usb_storage(+) amdgpu(+) radeon serio_raw atkbd gpu_sched crc32_pclmul libps2 drm_buddy drm_ttm_helper vivaldi_fmap ttm crc32c_intel ata_piix drm_display_helper cec i8042 serio video
+дек 01 05:55:45 archiso kernel: CR2: 0000000000000000
+дек 01 05:55:45 archiso kernel: usb 2-1.3: new full-speed USB device number 6 using ehci-pci
+дек 01 05:55:45 archiso kernel: ---[ end trace 0000000000000000 ]---
+дек 01 05:55:45 archiso kernel: RIP: 0010:amdgpu_device_fini_sw+0x2a4/0x390 [amdgpu]
+дек 01 05:55:45 archiso kernel: Code: 85 00 00 00 48 89 df e8 ca d3 04 00 48 83 bb f0 5d 00 00 00 74 08 48 89 df e8 18 5f 04 00 48 8b bb 10 8b 01 00 b8 ff ff ff ff <f0> 0f c1 07 83 f8 01 74 4f 85 c0 0f 8e c6 00 00 00 48 c7 83 10 8b
+дек 01 05:55:45 archiso kernel: scsi host4: usb-storage 2-1.1:1.0
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver usb-storage
+дек 01 05:55:45 archiso kernel: RSP: 0018:ffffaa620059bbd8 EFLAGS: 00010246
+дек 01 05:55:45 archiso kernel: RAX: 00000000ffffffff RBX: ffff961712a20000 RCX: 0000000000000000
+дек 01 05:55:45 archiso kernel: RDX: 0000000000030600 RSI: 0000000000000000 RDI: 0000000000000000
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver uas
+дек 01 05:55:45 archiso kernel: RBP: ffff961712a20010 R08: ffffffffb70ea002 R09: 0000000000000010
+дек 01 05:55:45 archiso kernel: R10: 0000000000000036 R11: ffff96170f173918 R12: ffffaa620059bc58
+дек 01 05:55:45 archiso kernel: R13: ffff961700c9b0d0 R14: ffff961700c9b374 R15: 0000000000000000
+дек 01 05:55:45 archiso kernel: FS:  00007fddf273a080(0000) GS:ffff96171ac00000(0000) knlGS:0000000000000000
+дек 01 05:55:45 archiso kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+дек 01 05:55:45 archiso kernel: CR2: 00007f2df41b0000 CR3: 00000001057d0006 CR4: 00000000000606f0
+дек 01 05:55:45 archiso kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 48x/48x writer dvd-ram cd/rw xa/form2 cdda tray
+дек 01 05:55:45 archiso kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+дек 01 05:55:45 archiso kernel: sr 1:0:0:0: Attached scsi CD-ROM sr0
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device not accepting address 6, error -32
+дек 01 05:55:45 archiso kernel: usb 2-1.3: new full-speed USB device number 7 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1.3: device not accepting address 7, error -32
+дек 01 05:55:45 archiso kernel: usb 2-1-port3: unable to enumerate USB device
+дек 01 05:55:45 archiso kernel: usb 2-1.5: new high-speed USB device number 8 using ehci-pci
+дек 01 05:55:45 archiso kernel: scsi 4:0:0:0: Direct-Access     Generic  Storage Device   0.00 PQ: 0 ANSI: 2
+дек 01 05:55:45 archiso kernel: sd 4:0:0:0: [sdb] Media removed, stopped polling
+дек 01 05:55:45 archiso kernel: sd 4:0:0:0: [sdb] Attached SCSI removable disk
+дек 01 05:55:45 archiso kernel: usb 2-1.5: New USB device found, idVendor=0458, idProduct=7065, bcdDevice= 1.00
+дек 01 05:55:45 archiso kernel: usb 2-1.5: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+дек 01 05:55:45 archiso kernel: usb 2-1.5: Product: iSlim 2020AF
+дек 01 05:55:45 archiso kernel: usb 2-1.5: Manufacturer: KYE SYSTEMS CORP.
+дек 01 05:55:45 archiso kernel: usb 2-1.6: new low-speed USB device number 9 using ehci-pci
+дек 01 05:55:45 archiso kernel: usb 2-1.6: New USB device found, idVendor=2a7a, idProduct=938f, bcdDevice= 0.01
+дек 01 05:55:45 archiso kernel: usb 2-1.6: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+дек 01 05:55:45 archiso kernel: usb 2-1.6: Product: CASUE USB KB
+дек 01 05:55:45 archiso kernel: input: CASUE USB KB as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.6/2-1.6:1.0/0003:2A7A:938F.0001/input/input4
+дек 01 05:55:45 archiso kernel: hid-generic 0003:2A7A:938F.0001: input,hidraw0: USB HID v1.10 Keyboard [CASUE USB KB] on usb-0000:00:1d.0-1.6/input0
+дек 01 05:55:45 archiso kernel: input: CASUE USB KB Consumer Control as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.6/2-1.6:1.1/0003:2A7A:938F.0002/input/input5
+дек 01 05:55:45 archiso kernel: input: CASUE USB KB System Control as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.6/2-1.6:1.1/0003:2A7A:938F.0002/input/input6
+дек 01 05:55:45 archiso kernel: hid-generic 0003:2A7A:938F.0002: input,hidraw1: USB HID v1.10 Device [CASUE USB KB] on usb-0000:00:1d.0-1.6/input1
+дек 01 05:55:45 archiso kernel: usbcore: registered new interface driver usbhid
+дек 01 05:55:45 archiso kernel: usbhid: USB HID core driver
+дек 01 05:55:45 archiso kernel: usb 1-1.2: device descriptor read/64, error -110
+дек 01 05:55:45 archiso kernel: usb 1-1.2: New USB device found, idVendor=abcd, idProduct=1234, bcdDevice= 1.00
+дек 01 05:55:45 archiso kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+дек 01 05:55:45 archiso kernel: usb 1-1.2: Product: UDisk           
+дек 01 05:55:45 archiso kernel: usb 1-1.2: Manufacturer: General 
+дек 01 05:55:45 archiso kernel: usb 1-1.2: SerialNumber: Љ
+дек 01 05:55:45 archiso kernel: usb-storage 1-1.2:1.0: USB Mass Storage device detected
+дек 01 05:55:45 archiso kernel: scsi host5: usb-storage 1-1.2:1.0
+дек 01 05:55:45 archiso kernel: scsi 5:0:0:0: Direct-Access     General  UDisk            5.00 PQ: 0 ANSI: 2
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] 15728640 512-byte logical blocks: (8.05 GB/7.50 GiB)
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] Write Protect is off
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] Mode Sense: 0b 00 00 08
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] No Caching mode page found
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] Assuming drive cache: write through
+дек 01 05:55:45 archiso kernel:  sdc: sdc1 sdc2
+дек 01 05:55:45 archiso kernel: sd 5:0:0:0: [sdc] Attached SCSI removable disk
+дек 01 05:55:45 archiso kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+дек 01 05:55:45 archiso kernel: ISO 9660 Extensions: RRIP_1991A
+дек 01 05:55:45 archiso kernel: random: crng init done
+дек 01 05:55:45 archiso kernel: loop: module loaded
+дек 01 05:55:45 archiso kernel: loop0: detected capacity change from 0 to 1832640
+дек 01 05:55:45 archiso kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+дек 01 05:55:45 archiso kernel: overlayfs: "xino" feature enabled using 2 upper inode bits.
+дек 01 05:55:45 archiso systemd[1]: systemd 252.2-2-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified)
+дек 01 05:55:45 archiso systemd[1]: Detected architecture x86-64.
+дек 01 05:55:45 archiso systemd[1]: Hostname set to <archiso>.
+дек 01 05:55:45 archiso systemd[1]: Initializing machine ID from random generator.
+дек 01 05:55:45 archiso systemd[1]: Queued start job for default target Multi-User System.
+дек 01 05:55:45 archiso systemd[1]: Created slice Slice /system/getty.
+дек 01 05:55:45 archiso systemd[1]: Created slice Slice /system/modprobe.
+дек 01 05:55:45 archiso systemd[1]: Created slice User and Session Slice.
+дек 01 05:55:45 archiso systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+дек 01 05:55:45 archiso systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+дек 01 05:55:45 archiso systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+дек 01 05:55:45 archiso systemd[1]: Reached target Local Encrypted Volumes.
+дек 01 05:55:45 archiso systemd[1]: Reached target Local Integrity Protected Volumes.
+дек 01 05:55:45 archiso systemd[1]: Reached target Path Units.
+дек 01 05:55:45 archiso systemd[1]: Reached target Remote File Systems.
+дек 01 05:55:45 archiso systemd[1]: Reached target Slice Units.
+дек 01 05:55:45 archiso systemd[1]: Reached target Swaps.
+дек 01 05:55:45 archiso systemd[1]: Reached target Local Verity Protected Volumes.
+дек 01 05:55:45 archiso systemd[1]: Listening on Device-mapper event daemon FIFOs.
+дек 01 05:55:45 archiso systemd[1]: Listening on LVM2 poll daemon socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on Process Core Dump Socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on Journal Audit Socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on Journal Socket (/dev/log).
+дек 01 05:55:45 archiso systemd[1]: Listening on Journal Socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on Network Service Netlink Socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on udev Control Socket.
+дек 01 05:55:45 archiso systemd[1]: Listening on udev Kernel Socket.
+дек 01 05:55:45 archiso systemd[1]: Mounting Huge Pages File System...
+дек 01 05:55:45 archiso systemd[1]: Mounting POSIX Message Queue File System...
+дек 01 05:55:45 archiso systemd[1]: Mounting Kernel Debug File System...
+дек 01 05:55:45 archiso systemd[1]: Mounting Kernel Trace File System...
+дек 01 05:55:45 archiso systemd[1]: Mounting Temporary Directory /tmp...
+дек 01 05:55:45 archiso systemd[1]: Starting Create List of Static Device Nodes...
+дек 01 05:55:45 archiso systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+дек 01 05:55:45 archiso systemd[1]: Starting Load Kernel Module configfs...
+дек 01 05:55:45 archiso systemd[1]: Starting Load Kernel Module drm...
+дек 01 05:55:45 archiso systemd[1]: Starting Load Kernel Module fuse...
+дек 01 05:55:45 archiso kernel: fuse: init (API version 7.36)
+дек 01 05:55:45 archiso systemd[1]: OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+дек 01 05:55:45 archiso systemd[1]: Starting Journal Service...
+дек 01 05:55:45 archiso systemd[1]: Starting Load Kernel Modules...
+дек 01 05:55:45 archiso systemd[1]: Starting Remount Root and Kernel File Systems...
+дек 01 05:55:45 archiso systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+дек 01 05:55:45 archiso kernel: Asymmetric key parser 'pkcs8' registered
+дек 01 05:55:45 archiso systemd[1]: Starting Wait Until Kernel Time Synchronized...
+дек 01 05:55:45 archiso systemd[1]: Starting Coldplug All udev Devices...
+дек 01 05:55:45 archiso systemd[1]: Started Journal Service.
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.806:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.823:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=kmod-static-nodes comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.829:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@configfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1131 audit(1669874145.836:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@configfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.839:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1131 audit(1669874145.839:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.843:8): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1131 audit(1669874145.843:9): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.846:10): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso kernel: audit: type=1130 audit(1669874145.876:11): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:45 archiso systemd-journald[248]: Received client request to flush runtime journal.
+дек 01 05:55:47 archiso kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+дек 01 05:55:47 archiso kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+дек 01 05:55:48 archiso kernel: mc: Linux media interface: v0.10
+дек 01 05:55:48 archiso kernel: ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042F conflicts with OpRegion 0x0000000000000400-0x000000000000047F (\PMIO) (20220331/utaddress-204)
+дек 01 05:55:48 archiso kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+дек 01 05:55:48 archiso kernel: ACPI Warning: SystemIO range 0x0000000000000540-0x000000000000054F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20220331/utaddress-204)
+дек 01 05:55:48 archiso kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+дек 01 05:55:48 archiso kernel: ACPI Warning: SystemIO range 0x0000000000000530-0x000000000000053F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20220331/utaddress-204)
+дек 01 05:55:48 archiso kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+дек 01 05:55:48 archiso kernel: ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x0000000000000500-0x000000000000051F (\LED) (20220331/utaddress-204)
+дек 01 05:55:48 archiso kernel: ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20220331/utaddress-204)
+дек 01 05:55:48 archiso kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+дек 01 05:55:48 archiso kernel: lpc_ich: Resource conflict(s) found affecting gpio_ich
+дек 01 05:55:48 archiso kernel: input: PC Speaker as /devices/platform/pcspkr/input/input7
+дек 01 05:55:48 archiso kernel: videodev: Linux video capture interface: v2.00
+дек 01 05:55:48 archiso kernel: i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+дек 01 05:55:48 archiso kernel: i2c i2c-3: 1/4 memory slots populated (from DMI)
+дек 01 05:55:48 archiso kernel: i2c i2c-3: Successfully instantiated SPD at 0x50
+дек 01 05:55:48 archiso kernel: r8169 0000:03:00.0: can't disable ASPM; OS doesn't have ASPM control
+дек 01 05:55:48 archiso kernel: r8169 0000:03:00.0 eth0: RTL8168evl/8111evl, 90:2b:34:0d:cd:11, XID 2c9, IRQ 27
+дек 01 05:55:48 archiso kernel: RAPL PMU: API unit is 2^-32 Joules, 3 fixed counters, 163840 ms ovfl timer
+дек 01 05:55:48 archiso kernel: RAPL PMU: hw unit of domain pp0-core 2^-16 Joules
+дек 01 05:55:48 archiso kernel: r8169 0000:03:00.0 eth0: jumbo features [frames: 9194 bytes, tx checksumming: ko]
+дек 01 05:55:48 archiso kernel: RAPL PMU: hw unit of domain package 2^-16 Joules
+дек 01 05:55:48 archiso kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-16 Joules
+дек 01 05:55:48 archiso kernel: r8169 0000:03:00.0 enp3s0: renamed from eth0
+дек 01 05:55:48 archiso kernel: iTCO_vendor_support: vendor-support=0
+дек 01 05:55:48 archiso kernel: at24 3-0050: supply vcc not found, using dummy regulator
+дек 01 05:55:49 archiso kernel: at24 3-0050: 256 byte spd EEPROM, read-only
+дек 01 05:55:49 archiso kernel: cryptd: max_cpu_qlen set to 1000
+дек 01 05:55:49 archiso kernel: usb 2-1.5: Found UVC 1.00 device iSlim 2020AF (0458:7065)
+дек 01 05:55:49 archiso kernel: iTCO_wdt iTCO_wdt.1.auto: unable to reset NO_REBOOT flag, device disabled by hardware/BIOS
+дек 01 05:55:49 archiso kernel: input: iSlim 2020AF: iSlim 2020AF as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.5/2-1.5:1.0/input/input9
+дек 01 05:55:49 archiso kernel: usbcore: registered new interface driver uvcvideo
+дек 01 05:55:49 archiso kernel: RTL8211E Gigabit Ethernet r8169-0-300:00: attached PHY driver (mii_bus:phy_addr=r8169-0-300:00, irq=MAC)
+дек 01 05:55:49 archiso kernel: usb 2-1.5: 3:1: cannot get freq at ep 0x84
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2: autoconfig for ALC887-VD: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:    mono: mono_out=0x0
+дек 01 05:55:49 archiso kernel: usb 2-1.5: Warning! Unlikely big volume range (=3328), cval->res is probably wrong.
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:    inputs:
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:      Rear Mic=0x18
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:      Front Mic=0x19
+дек 01 05:55:49 archiso kernel: usb 2-1.5: [2] FU [Mic Capture Volume] ch = 1, val = 4608/7936/1
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:      Line=0x1a
+дек 01 05:55:49 archiso kernel: snd_hda_codec_realtek hdaudioC0D2:      CD=0x1c
+дек 01 05:55:49 archiso kernel: input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input10
+дек 01 05:55:49 archiso kernel: usbcore: registered new interface driver snd-usb-audio
+дек 01 05:55:49 archiso kernel: input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input11
+дек 01 05:55:49 archiso kernel: input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1b.0/sound/card0/input12
+дек 01 05:55:49 archiso kernel: input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input13
+дек 01 05:55:49 archiso kernel: snd_hda_intel 0000:00:1b.0: device 1458:a002 is on the power_save denylist, forcing power_save to 0
+дек 01 05:55:49 archiso kernel: r8169 0000:03:00.0 enp3s0: Link is Down
+дек 01 05:55:49 archiso kernel: intel_rapl_common: Found RAPL domain package
+дек 01 05:55:49 archiso kernel: intel_rapl_common: Found RAPL domain core
+дек 01 05:55:49 archiso kernel: intel_rapl_common: Found RAPL domain uncore
+дек 01 05:55:50 archiso kernel: input: ImPS/2 Generic Wheel Mouse as /devices/platform/i8042/serio1/input/input8
+дек 01 05:55:50 archiso kernel: mousedev: PS/2 mouse device common for all mice
+дек 01 05:55:52 archiso kernel: IPv6: ADDRCONF(NETDEV_CHANGE): enp3s0: link becomes ready
+дек 01 05:55:52 archiso kernel: r8169 0000:03:00.0 enp3s0: Link is Up - 100Mbps/Full - flow control rx/tx
+дек 01 05:55:53 archiso kernel: kauditd_printk_skb: 20 callbacks suppressed
+дек 01 05:55:53 archiso kernel: audit: type=1130 audit(1669874153.216:32): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-networkd-wait-online comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:53 archiso kernel: audit: type=1130 audit(1669874153.376:33): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:55:53 archiso kernel: audit: type=1130 audit(1669874153.419:34): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-done comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:56:23 archiso kernel: audit: type=1130 audit(1669874183.563:35): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-time-wait-sync comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:49 archiso kernel: audit: type=1130 audit(1669874269.897:36): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-settle comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+дек 01 05:57:49 archiso kernel: audit: type=1334 audit(1669874269.953:37): prog-id=14 op=LOAD
+дек 01 05:57:49 archiso kernel: audit: type=1334 audit(1669874269.977:38): prog-id=15 op=LOAD
+дек 01 05:57:49 archiso kernel: audit: type=1334 audit(1669874269.980:39): prog-id=16 op=LOAD
+дек 01 05:57:49 archiso kernel: audit: type=1334 audit(1669874269.980:40): prog-id=17 op=LOAD
+дек 01 05:57:50 archiso kernel: audit: type=1130 audit(1669874269.990:41): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=alsa-restore comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:50 archiso kernel: audit: type=1130 audit(1669874270.070:42): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:50 archiso kernel: audit: type=1130 audit(1669874270.177:43): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:50 archiso kernel: NET: Registered PF_ALG protocol family
+дек 01 05:57:50 archiso kernel: audit: type=1130 audit(1669874270.323:44): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:50 archiso kernel: NET: Registered PF_QIPCRTR protocol family
+дек 01 05:57:50 archiso kernel: audit: type=1130 audit(1669874270.573:45): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ModemManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:56 archiso kernel: kauditd_printk_skb: 6 callbacks suppressed
+дек 01 05:57:56 archiso kernel: audit: type=1101 audit(1669874276.834:52): pid=473 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/login" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:57:56 archiso kernel: audit: type=1103 audit(1669874276.837:53): pid=473 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="liveuser" exe="/usr/bin/login" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:57:56 archiso kernel: audit: type=1006 audit(1669874276.837:54): pid=473 uid=0 old-auid=4294967295 auid=1000 tty=tty1 old-ses=4294967295 ses=1 res=1
+дек 01 05:57:56 archiso kernel: audit: type=1300 audit(1669874276.837:54): arch=c000003e syscall=1 success=yes exit=4 a0=5 a1=7ffcd06e8860 a2=4 a3=7ffcd06e8574 items=0 ppid=1 pid=473 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=984 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" key=(null)
+дек 01 05:57:56 archiso kernel: audit: type=1327 audit(1669874276.837:54): proctitle=2F62696E2F6C6F67696E002D66
+дек 01 05:57:56 archiso kernel: audit: type=1130 audit(1669874276.944:55): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:56 archiso kernel: audit: type=1101 audit(1669874276.977:56): pid=491 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:57:56 archiso kernel: audit: type=1103 audit(1669874276.977:57): pid=491 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="liveuser" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+дек 01 05:57:56 archiso kernel: audit: type=1006 audit(1669874276.977:58): pid=491 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=2 res=1
+дек 01 05:57:56 archiso kernel: audit: type=1300 audit(1669874276.977:58): arch=c000003e syscall=1 success=yes exit=4 a0=9 a1=7ffea6b598b0 a2=4 a3=7ffea6b595c4 items=0 ppid=1 pid=491 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=2 comm="(systemd)" exe="/usr/lib/systemd/systemd" key=(null)
+дек 01 05:58:31 archiso kernel: kauditd_printk_skb: 5 callbacks suppressed
+дек 01 05:58:31 archiso kernel: audit: type=1101 audit(1669874311.622:63): pid=1048 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:58:31 archiso kernel: audit: type=1110 audit(1669874311.629:64): pid=1048 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:58:31 archiso kernel: audit: type=1105 audit(1669874311.629:65): pid=1048 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:58:31 archiso kernel: audit: type=1106 audit(1669874311.652:66): pid=1048 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:58:31 archiso kernel: audit: type=1104 audit(1669874311.652:67): pid=1048 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:59:00 archiso kernel: usb 2-1.4: new full-speed USB device number 10 using ehci-pci
+дек 01 05:59:00 archiso kernel: usb 2-1.4: device descriptor read/64, error -32
+дек 01 05:59:00 archiso kernel: usb 2-1.4: device descriptor read/64, error -32
+дек 01 05:59:00 archiso kernel: usb 2-1.4: new full-speed USB device number 11 using ehci-pci
+дек 01 05:59:00 archiso kernel: usb 2-1.4: device descriptor read/64, error -32
+дек 01 05:59:00 archiso kernel: usb 2-1-port4: attempt power cycle
+дек 01 05:59:01 archiso kernel: usb 2-1.4: new high-speed USB device number 12 using ehci-pci
+дек 01 05:59:01 archiso kernel: usb 2-1.4: New USB device found, idVendor=13fe, idProduct=4100, bcdDevice= 1.00
+дек 01 05:59:01 archiso kernel: usb 2-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+дек 01 05:59:01 archiso kernel: usb 2-1.4: Product: Silicon-Power16G
+дек 01 05:59:01 archiso kernel: usb 2-1.4: Manufacturer: UFD 2.0 
+дек 01 05:59:01 archiso kernel: usb 2-1.4: SerialNumber: 1500312203200000000011A6
+дек 01 05:59:01 archiso kernel: usb-storage 2-1.4:1.0: USB Mass Storage device detected
+дек 01 05:59:01 archiso kernel: scsi host6: usb-storage 2-1.4:1.0
+дек 01 05:59:02 archiso kernel: scsi 6:0:0:0: Direct-Access     UFD 2.0  Silicon-Power16G 1.00 PQ: 0 ANSI: 6
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] 30558183 512-byte logical blocks: (15.6 GB/14.6 GiB)
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] Write Protect is off
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] Mode Sense: 23 00 00 00
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] No Caching mode page found
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] Assuming drive cache: write through
+дек 01 05:59:04 archiso kernel:  sdd: sdd1
+дек 01 05:59:04 archiso kernel: sd 6:0:0:0: [sdd] Attached SCSI removable disk
+дек 01 05:59:19 archiso kernel: audit: type=1130 audit(1669874359.240:68): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=reflector comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:59:19 archiso kernel: audit: type=1131 audit(1669874359.240:69): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=reflector comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:59:19 archiso kernel: audit: type=1334 audit(1669874359.300:70): prog-id=0 op=UNLOAD
+дек 01 05:59:28 archiso kernel: audit: type=1130 audit(1669874368.621:71): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=pacman-init comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 05:59:44 archiso kernel: audit: type=1101 audit(1669874384.748:72): pid=1382 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:59:44 archiso kernel: audit: type=1110 audit(1669874384.748:73): pid=1382 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:59:44 archiso kernel: audit: type=1105 audit(1669874384.748:74): pid=1382 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:59:44 archiso kernel: FAT-fs (sdd1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+дек 01 05:59:44 archiso kernel: audit: type=1106 audit(1669874384.935:75): pid=1382 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 05:59:44 archiso kernel: audit: type=1104 audit(1669874384.935:76): pid=1382 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:00:10 archiso kernel: audit: type=1101 audit(1669874410.770:77): pid=1392 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:00:10 archiso kernel: audit: type=1110 audit(1669874410.770:78): pid=1392 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:00:10 archiso kernel: audit: type=1105 audit(1669874410.770:79): pid=1392 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:00:15 archiso kernel: audit: type=1106 audit(1669874415.153:80): pid=1392 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:00:15 archiso kernel: audit: type=1104 audit(1669874415.153:81): pid=1392 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:01:09 archiso kernel: audit: type=1101 audit(1669874469.021:82): pid=1398 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:01:09 archiso kernel: audit: type=1110 audit(1669874469.024:83): pid=1398 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:01:09 archiso kernel: audit: type=1105 audit(1669874469.024:84): pid=1398 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:01:09 archiso kernel: audit: type=1106 audit(1669874469.027:85): pid=1398 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:01:09 archiso kernel: audit: type=1104 audit(1669874469.027:86): pid=1398 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:03:39 archiso kernel: audit: type=1101 audit(1669874619.545:87): pid=1407 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:03:39 archiso kernel: audit: type=1110 audit(1669874619.545:88): pid=1407 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:03:39 archiso kernel: audit: type=1105 audit(1669874619.545:89): pid=1407 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:03:39 archiso kernel: audit: type=1106 audit(1669874619.572:90): pid=1407 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:03:39 archiso kernel: audit: type=1104 audit(1669874619.572:91): pid=1407 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:27 archiso kernel: audit: type=1101 audit(1669874667.387:92): pid=1413 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:27 archiso kernel: audit: type=1110 audit(1669874667.387:93): pid=1413 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:27 archiso kernel: audit: type=1105 audit(1669874667.387:94): pid=1413 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:27 archiso kernel: audit: type=1106 audit(1669874667.387:95): pid=1413 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:27 archiso kernel: audit: type=1104 audit(1669874667.387:96): pid=1413 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1101 audit(1669874675.846:97): pid=1416 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="liveuser" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1110 audit(1669874675.850:98): pid=1416 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1105 audit(1669874675.850:99): pid=1416 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1100 audit(1669874675.923:100): pid=1417 uid=0 auid=1000 ses=1 msg='op=PAM:authentication grantors=pam_rootok acct="root" exe="/usr/bin/su" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1101 audit(1669874675.923:101): pid=1417 uid=0 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix acct="root" exe="/usr/bin/su" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1103 audit(1669874675.923:102): pid=1417 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_rootok acct="root" exe="/usr/bin/su" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:04:35 archiso kernel: audit: type=1105 audit(1669874675.923:103): pid=1417 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_unix acct="root" exe="/usr/bin/su" hostname=archiso addr=? terminal=/dev/tty1 res=success'
+дек 01 06:07:50 archiso kernel: audit: type=1130 audit(1669874870.055:104): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+дек 01 06:07:50 archiso kernel: audit: type=1131 audit(1669874870.055:105): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'

@@ -1,0 +1,11 @@
+
+https://download.qt.io/new_archive/qt/5.11/5.11.2/qt-opensource-windows-x86-5.11.2.exe
+https://download.qt.io/new_archive/qt/5.11/5.11.2/qt-opensource-linux-x64-5.11.2.run
+https://download.qt.io/new_archive/qt/5.7/5.7.0/qt-opensource-linux-x64-android-5.7.0.run
+https://download.qt.io/new_archive/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run
+https://download.qt.io/new_archive/qt/5.7/5.7.0/qt-opensource-windows-x86-mingw530-5.7.0.exe
+https://download.qt.io/new_archive/qt/5.7/5.7.0/qt-opensource-windows-x86-android-5.7.0.exe
+https://download.qt.io/new_archive/qt/5.8/5.8.0/qt-opensource-linux-x64-android-5.8.0.run
+https://download.qt.io/new_archive/qt/5.8/5.8.0/qt-opensource-linux-x64-5.8.0.run
+https://download.qt.io/new_archive/qt/5.8/5.8.0/qt-opensource-windows-x86-android-5.8.0.exe
+https://download.qt.io/new_archive/qt/5.8/5.8.0/qt-opensource-windows-x86-mingw530-5.8.0.exe

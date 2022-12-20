@@ -1,0 +1,233 @@
+
+
+/var/lib/flatpak/appstream/
+flathub
+
+/var/lib/flatpak/appstream/flathub/x86_64/active/icons/128x128/
+
+find /var/lib/flatpak/appstream/flathub/ -type d -iname "icons"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons" -type d -iname "128x128"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons" -type d -iname "64x64"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/64x64
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128" -type f -iname "com.google.Chrome.*"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128/com.google.Chrome.png
+
+find "/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128" -type f -iname "com.github.tchx84.Flatseal.*"
+/var/lib/flatpak/appstream/flathub/x86_64/384f6b13037c24b3848271fc7c31223cb209b7f08218e5c19e6341daeca70387/icons/128x128/com.github.tchx84.Flatseal.png
+
+
+
+cat /var/lib/flatpak/appstream/flathub/x86_64/active/appstream.xml | grep -Ei "thumbnail" | sed 's/^[ \t]*//' | cut -d '>' -f2 | cut -d '<' -f1 > /home/mikl/002/scr.txt
+
+cat ./scr.txt | wc -l
+20280
+
+cat ./scr.txt | grep -Ei "*.-stable.*" | wc -l
+20125
+
+cat ./scr.txt | grep -Ei "*.-stable/" | wc -l
+20109
+
+cat ./scr.txt | grep -Ei "org.mozilla.firefox" | sort
+
+
+
+
+flatpak --gl-drivers
+default
+host
+
+flatpak --default-arch
+x86_64
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak list
+Name                                       Application ID                            Version              Branch     Installation
+Flatseal                                   com.github.tchx84.Flatseal                1.7.5                stable     system
+Google Chrome                              com.google.Chrome                         101.0.4951.41-1      stable     system
+Freedesktop Platform                       org.freedesktop.Platform                  21.08.13             21.08      system
+Mesa                                       org.freedesktop.Platform.GL.default       21.3.8               21.08      system
+Intel                                      org.freedesktop.Platform.VAAPI.Intel                           21.08      system
+openh264                                   org.freedesktop.Platform.openh264         2.1.0                2.0        system
+GNOME Application Platform version 41      org.gnome.Platform                                             41         system
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime
+Name                                        Application ID                             Version        Branch       Installation
+Freedesktop Platform                        org.freedesktop.Platform                   21.08.13       21.08        system
+Mesa                                        org.freedesktop.Platform.GL.default        21.3.8         21.08        system
+Intel                                       org.freedesktop.Platform.VAAPI.Intel                      21.08        system
+openh264                                    org.freedesktop.Platform.openh264          2.1.0          2.0          system
+GNOME Application Platform version 41       org.gnome.Platform                                        41           system
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=name | sed -e '/^Name/d'
+Freedesktop Platform
+Mesa
+Intel
+openh264
+GNOME Application Platform version 41
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=application | sed -e '/^Application/d'
+org.freedesktop.Platform
+org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.VAAPI.Intel
+org.freedesktop.Platform.openh264
+org.gnome.Platform
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=version | sed -e '/^Version/d'
+21.08.13
+21.3.8
+-
+2.1.0
+-
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=branch | sed -e '/^Branch/d'
+21.08
+21.08
+21.08
+2.0
+41
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=size | sed -e '/^Size/d'
+562.7?MB
+387.5?MB
+46.4?MB
+778.2?kB
+770.0?MB
+
+
+LC_ALL=en_US.UTF-8 flatpak list --runtime --columns=arch | sed -e '/^Arch/d'
+x86_64
+x86_64
+x86_64
+x86_64
+x86_64
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app
+Name                  Application ID                     Version                 Branch         Installation
+Flatseal              com.github.tchx84.Flatseal         1.7.5                   stable         system
+Google Chrome         com.google.Chrome                  101.0.4951.41-1         stable         system
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=name | sed -e '/^Name/d'
+Flatseal
+Google Chrome
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=application | sed -e '/^Application/d'
+com.github.tchx84.Flatseal
+com.google.Chrome
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=version | sed -e '/^Version/d'
+1.7.5
+101.0.4951.41-1
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=branch | sed -e '/^Branch/d'
+stable
+stable
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=size | sed -e '/^Size/d'
+2.6?MB
+20.0?MB
+
+
+LC_ALL=en_US.UTF-8 flatpak list --app --columns=arch | sed -e '/^Arch/d'
+x86_64
+x86_64
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=name dosbox | sed -e '/^Name/d'
+DOSBox
+DOSBox-X
+DOSBox Staging
+Boxtron
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=description dosbox | sed -e '/^Description/d'
+x86/DOS emulator with sound and graphics
+x86/DOS emulator with sound and graphics
+DOS/x86 emulator focusing on ease of use
+Compatibility tool to run DOS games on Steam through native Linux DOSBox
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=application dosbox | sed -e '/^Application ID/d'
+Application ID
+com.dosbox.DOSBox
+com.dosbox_x.DOSBox-X
+io.github.dosbox-staging
+com.valvesoftware.Steam.CompatibilityTool.Boxtron
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=version dosbox | sed -e '/^Version/d'
+0.74-3
+0.83.25
+0.78.1
+
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=branch dosbox | sed -e '/^Branch/d'
+stable
+stable
+stable
+stable
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=remotes dosbox | sed -e '/^Remotes/d'
+flathub
+flathub
+flathub
+flathub
+
+
+
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=name com.github.unrud.djpdf.OCR.Afr | sed -e '/^Name/d' | sed '2,$d'
+OCR Afrikaans
+
+LC_ALL=en_US.UTF-8 flatpak search --columns=description com.github.unrud.djpdf.OCR.Afr | sed -e '/^Description/d'
+OCR extension for Afrikaans language (afr)
+Create small, searchable PDFs from scanned documents
+
+
+
+
+latpak remote-ls --app --columns=application > fl-ls1.txt
+
+flatpak remote-ls --runtime --columns=application > fl-ls2.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

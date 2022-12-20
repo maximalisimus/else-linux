@@ -1,0 +1,4 @@
+
+
+$ sudo nano /etc/modprobe.d/nobeep.conf
+blacklist    pcspkr
